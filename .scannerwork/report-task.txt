@@ -1,0 +1,6 @@
+projectKey=Facturador
+serverUrl=http://localhost:9003
+serverVersion=8.4.2.36762
+dashboardUrl=http://localhost:9003/dashboard?id=Facturador
+ceTaskId=AXTCf9do32u-T0ldp8OR
+ceTaskUrl=http://localhost:9003/api/ce/task?id=AXTCf9do32u-T0ldp8OR
