@@ -155,12 +155,12 @@ public class RegistrosCSV implements IRepositorio {
 	public void guardarCDRsCalculados(String fecha) {
 		
         File file = new File("C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\"+fecha+".txt");
-        try {
-            FileWriter fw = new FileWriter(file);
-            BufferedWriter bw = new BufferedWriter(fw);
-            PrintWriter pw = new PrintWriter(bw);
-            
-            for (CDR CDR: CDRs) {
+        try(
+        		FileWriter fw = new FileWriter(file);
+        		BufferedWriter bw = new BufferedWriter(fw);
+                PrintWriter pw = new PrintWriter(bw);) 
+        {
+                for (CDR CDR: CDRs) {
             	guardarResumenLlamada(pw, CDR);
             	pw.flush();
             }
@@ -169,6 +169,7 @@ public class RegistrosCSV implements IRepositorio {
         } catch (Exception e) {
         	System.err.println("No se pudo crear archivo");
         }
+        
 	}
 
 	private void guardarResumenLlamada(PrintWriter pw, CDR CDR) {
