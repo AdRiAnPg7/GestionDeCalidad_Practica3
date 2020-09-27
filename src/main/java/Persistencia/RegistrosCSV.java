@@ -70,8 +70,9 @@ public class RegistrosCSV implements IRepositorio {
 	public void cargarPlanATelefonos() {
 		Path filePath = Paths.get("C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonos.txt");
 
-		try {
-			BufferedReader br = Files.newBufferedReader(filePath);
+		try(
+				BufferedReader br = Files.newBufferedReader(filePath);) 
+		{
 			String linea ="";
 			
 			while((linea = br.readLine())!=null) {
