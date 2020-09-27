@@ -1,6 +1,6 @@
-projectKey=Facturador
-serverUrl=http://localhost:9003
+projectKey=org.sonarqube:java-sonar-runner-simple
+serverUrl=http://localhost:9000
 serverVersion=8.4.2.36762
-dashboardUrl=http://localhost:9003/dashboard?id=Facturador
-ceTaskId=AXTCf9do32u-T0ldp8OR
-ceTaskUrl=http://localhost:9003/api/ce/task?id=AXTCf9do32u-T0ldp8OR
+dashboardUrl=http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-sonar-runner-simple
+ceTaskId=AXTM28qpfA6lx8IQvAvG
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXTM28qpfA6lx8IQvAvG
