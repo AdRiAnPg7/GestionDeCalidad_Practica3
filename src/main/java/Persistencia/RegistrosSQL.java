@@ -61,8 +61,9 @@ public class RegistrosSQL implements IRepositorio {
 	public void leerCDRs() {
 		connect(CDRsPath);
 		ResultSet result = null;
-		try {
-			PreparedStatement st = conexion.prepareStatement("select * from cdr");
+		try (
+				PreparedStatement st = conexion.prepareStatement("select * from cdr");
+				){
 			result = st.executeQuery();
 			while (result.next()) {
 				var planPostPago = new PlanPostPago ();
@@ -104,8 +105,8 @@ public class RegistrosSQL implements IRepositorio {
 	public void cargarPlanATelefonos() {
 		connect(TelefonosPath);
 		ResultSet result = null;
-		try {
-			PreparedStatement st = conexion.prepareStatement("select * from Telefonia");
+		try (PreparedStatement st = conexion.prepareStatement("select * from Telefonia");){
+			
 			result = st.executeQuery();
 			while (result.next()) {
 				asignarPlan(result);
@@ -165,12 +166,13 @@ public class RegistrosSQL implements IRepositorio {
 	        	for (CDR CDR: CDRs) {
 	        		System.out.println("Dentro del FOR");
 	        		System.out.println(CDR.obtenerCosto());
-	        		  PreparedStatement posted = conexion.prepareStatement(
+	        		  try(PreparedStatement posted = conexion.prepareStatement(
 	  	            		"UPDATE cdr SET costo=" +CDR.obtenerCosto()+" WHERE id = " +indice);
-	        		
+	        				  ){
 	        		  posted.executeUpdate();
 	        		   indice = indice + 1;
-	  	           
+	        		  }
+	        		   
 	    		}
 	          
 	        } catch(Exception e){System.out.println(e);}
