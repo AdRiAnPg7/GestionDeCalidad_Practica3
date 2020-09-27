@@ -61,8 +61,8 @@ public class RegistrosSQL implements IRepositorio {
 	public void leerCDRs() {
 		connect(CDRsPath);
 		ResultSet result = null;
-		try {
-			PreparedStatement st = conexion.prepareStatement("select * from cdr");
+		try (PreparedStatement st = conexion.prepareStatement("select * from cdr")){
+			
 			result = st.executeQuery();
 			while (result.next()) {
 				var planPostPago = new PlanPostPago ();
