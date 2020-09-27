@@ -166,12 +166,13 @@ public class RegistrosSQL implements IRepositorio {
 	        	for (CDR CDR: CDRs) {
 	        		System.out.println("Dentro del FOR");
 	        		System.out.println(CDR.obtenerCosto());
-	        		  PreparedStatement posted = conexion.prepareStatement(
+	        		  try(PreparedStatement posted = conexion.prepareStatement(
 	  	            		"UPDATE cdr SET costo=" +CDR.obtenerCosto()+" WHERE id = " +indice);
-	        		
+	        				  ){
 	        		  posted.executeUpdate();
 	        		   indice = indice + 1;
-	  	           
+	        		  }
+	        		   
 	    		}
 	          
 	        } catch(Exception e){System.out.println(e);}
