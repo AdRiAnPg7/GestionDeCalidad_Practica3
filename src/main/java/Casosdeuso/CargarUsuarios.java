@@ -1,4 +1,4 @@
-package CasosUso;
+package Casosdeuso;
 
 
 import Persistencia.IRepositorio;

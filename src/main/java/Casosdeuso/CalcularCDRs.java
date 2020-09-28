@@ -1,9 +1,9 @@
-package CasosUso;
+package Casosdeuso;
 
 import Persistencia.IRepositorio;
 
 public class CalcularCDRs implements ICalcularCDRs {
-	public IRepositorio repositorio;
+	private IRepositorio repositorio;
 	String nombre;
 	
 	public CalcularCDRs( IRepositorio repositorio) {
