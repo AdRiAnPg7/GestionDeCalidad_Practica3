@@ -1,4 +1,4 @@
-package CasosUso;
+package Casosdeuso;
 
 import java.util.ArrayList;
 

@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import CasosUso.TarifarCDRs;
+import Casosdeuso.*;
 import Persistencia.RegistrosSQL;
 
 class TestTarifarCDRs {
