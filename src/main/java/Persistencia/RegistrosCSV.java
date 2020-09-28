@@ -29,7 +29,7 @@ public class RegistrosCSV implements IRepositorio {
 	int cantidadCDRs=0;
 	
 	public RegistrosCSV(){
-		
+		//Empty Constructor
 	}
 	
 	
@@ -37,8 +37,9 @@ public class RegistrosCSV implements IRepositorio {
 		
 		Path filePath = Paths.get("C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\CDRs.txt");
 		
-		try {
-			BufferedReader br = Files.newBufferedReader(filePath);
+		try(
+				BufferedReader br = Files.newBufferedReader(filePath);
+				) {
 			String linea ="";
 			
 			while((linea = br.readLine())!=null) {
@@ -69,8 +70,9 @@ public class RegistrosCSV implements IRepositorio {
 	public void cargarPlanATelefonos() {
 		Path filePath = Paths.get("C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonos.txt");
 
-		try {
-			BufferedReader br = Files.newBufferedReader(filePath);
+		try(
+				BufferedReader br = Files.newBufferedReader(filePath);) 
+		{
 			String linea ="";
 			
 			while((linea = br.readLine())!=null) {
@@ -88,57 +90,72 @@ public class RegistrosCSV implements IRepositorio {
 		
 		if("PlanPrePago".equals(datosDeLinea[2]) ) {
 			for (CDR CDR: CDRs) {
-			    if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(datosDeLinea[1])) {
-			    	var tarifa = new TarifaHorarios();
-			    	var plan = new PlanPrePago();
-			    	plan.aniadirTarifa(tarifa);
-			    	CDR.telefonoOrigen.aniadirPlan(plan);
-			    	
-			    	var nombre = datosDeLinea [0];
-			    	var telefono = Integer.parseInt(datosDeLinea [1]);
-			    	var lineaTemporal = new LineaTelefonica(telefono,plan,nombre);
-			    	if(verificarUsuarios(telefono)) {
-			    		usuarios.add(lineaTemporal);
-			    		cantidadUsuarios ++;
-			    	}
-			    }
+			    asignarPlanPrepago(datosDeLinea, CDR);
 			}
 		}
 		else if("PlanPostPago".equals(datosDeLinea[2]) ) {
 			for (CDR CDR: CDRs) {
-			    if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(datosDeLinea[1])) {
-			    	var tarifa = new TarifaNormal();
-			    	var plan = new PlanPostPago();
-			    	plan.aniadirTarifa(tarifa);
-			    	CDR.telefonoOrigen.aniadirPlan(plan);
-			    	
-			    	var nombre = datosDeLinea [0];
-			    	var telefono = Integer.parseInt(datosDeLinea [1]);
-			    	var lineaTemporal = new LineaTelefonica(telefono,plan,nombre);
-			    	if(verificarUsuarios(telefono)) {
-			    		usuarios.add(lineaTemporal);
-			    		cantidadUsuarios ++;
-			    	}
-			    }
+			    asignarPlanPostPago(datosDeLinea, CDR);
 			}
 		}
 		else if("PlanWow".equals(datosDeLinea[2])) {
 			for (CDR CDR: CDRs) {
-			    if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(datosDeLinea[1])) {
-			    	var tarifa = new TarifaAmigo();
-			    	var plan = new PlanWow();
-			    	tarifa.aniadirTelefonosAmigos(Integer.parseInt(datosDeLinea[3]));
-			    	plan.aniadirTarifa(tarifa);
-			    	CDR.telefonoOrigen.aniadirPlan(plan);
-			    	
-			    	var nombre = datosDeLinea [0];
-			    	var telefono = Integer.parseInt(datosDeLinea [1]);
-			    	var lineaTemporal = new LineaTelefonica(telefono,plan,nombre);
-			    	if(verificarUsuarios(telefono)) {
-			    		usuarios.add(lineaTemporal);
-			    		cantidadUsuarios ++;
-			    	}
-			    }
+			    asignarPlanWow(datosDeLinea, CDR);
+			}
+		}
+	}
+
+
+	private void asignarPlanWow(String[] datosDeLinea, CDR CDR) {
+		if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(datosDeLinea[1])) {
+			var tarifa = new TarifaAmigo();
+			var plan = new PlanWow();
+			tarifa.aniadirTelefonosAmigos(Integer.parseInt(datosDeLinea[3]));
+			plan.aniadirTarifa(tarifa);
+			CDR.telefonoOrigen.aniadirPlan(plan);
+			
+			var nombre = datosDeLinea [0];
+			var telefono = Integer.parseInt(datosDeLinea [1]);
+			var lineaTemporal = new LineaTelefonica(telefono,plan,nombre);
+			if(verificarUsuarios(telefono)) {
+				usuarios.add(lineaTemporal);
+				cantidadUsuarios ++;
+			}
+		}
+	}
+
+
+	private void asignarPlanPostPago(String[] datosDeLinea, CDR CDR) {
+		if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(datosDeLinea[1])) {
+			var tarifa = new TarifaNormal();
+			var plan = new PlanPostPago();
+			plan.aniadirTarifa(tarifa);
+			CDR.telefonoOrigen.aniadirPlan(plan);
+			
+			var nombre = datosDeLinea [0];
+			var telefono = Integer.parseInt(datosDeLinea [1]);
+			var lineaTemporal = new LineaTelefonica(telefono,plan,nombre);
+			if(verificarUsuarios(telefono)) {
+				usuarios.add(lineaTemporal);
+				cantidadUsuarios ++;
+			}
+		}
+	}
+
+
+	private void asignarPlanPrepago(String[] datosDeLinea, CDR CDR) {
+		if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(datosDeLinea[1])) {
+			var tarifa = new TarifaHorarios();
+			var plan = new PlanPrePago();
+			plan.aniadirTarifa(tarifa);
+			CDR.telefonoOrigen.aniadirPlan(plan);
+			
+			var nombre = datosDeLinea [0];
+			var telefono = Integer.parseInt(datosDeLinea [1]);
+			var lineaTemporal = new LineaTelefonica(telefono,plan,nombre);
+			if(verificarUsuarios(telefono)) {
+				usuarios.add(lineaTemporal);
+				cantidadUsuarios ++;
 			}
 		}
 	}

@@ -13,13 +13,16 @@ import Entidades.LineaTelefonica;
 
 class TestTelefono {
 	
+	private static final String NAME3 = "Gamal";
+	private static final String NAME2 = "Andres";
+	private static final String NAME1 = "Adrian";
 	int numeroTelefono = 77556644;
 	IPlan planPrePago = new PlanPrePago();
 	IPlan planPostPago = new PlanPostPago();
 	IPlan planWow= new PlanWow();
-	String nombre1= "Adrian";
-	String nombre2= "Andres";
-	String nombre3= "Gamal";
+	String NAME1= ;
+	String NAME2= NAME2;
+	String NAME3= NAME3;
 	
 	
 	@Test
@@ -48,41 +51,41 @@ class TestTelefono {
 	
 	@Test
 	void obtenerNombreAdrian() {
-		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPrePago,nombre1);
-		assertEquals("Adrian", telefono.obtenerNombre());
+		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPrePago,NAME1);
+		assertEquals(NAME1, telefono.obtenerNombre());
 	}
 	
 	@Test
 	void obtenerNombreAndres() {
-		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPostPago, nombre2);
-		assertEquals("Andres", telefono.obtenerNombre());
+		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPostPago, NAME2);
+		assertEquals(NAME2, telefono.obtenerNombre());
 	}
 	
 	@Test
 	void obtenerNombreGamal() {
-		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planWow, nombre3);
-		assertEquals("Gamal", telefono.obtenerNombre());
+		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planWow, NAME3);
+		assertEquals(NAME3, telefono.obtenerNombre());
 	}
 	
 	@Test
 	void obtenerTodosLosDatos() {
-		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPrePago, nombre1);
+		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPrePago, NAME1);
 		assertEquals(numeroTelefono, telefono.obtenerNumero());
-		assertEquals("Adrian", telefono.obtenerNombre());
+		assertEquals(NAME1, telefono.obtenerNombre());
 		assertEquals("PlanPrePago", telefono.obtenerPlan().obtenerNombre());
 	}
 	@Test
 	void obtenerTodosLosDatos2() {
-		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPostPago, nombre2);
+		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPostPago, NAME2);
 		assertEquals(numeroTelefono, telefono.obtenerNumero());
-		assertEquals("Andres", telefono.obtenerNombre());
+		assertEquals(NAME2, telefono.obtenerNombre());
 		assertEquals("PlanPostPago", telefono.obtenerPlan().obtenerNombre());
 	}
 	@Test
 	void obtenerTodosLosDatos3() {
-		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planWow, nombre3);
+		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planWow, NAME3);
 		assertEquals(numeroTelefono, telefono.obtenerNumero());
-		assertEquals("Gamal", telefono.obtenerNombre());
+		assertEquals(NAME3, telefono.obtenerNombre());
 		assertEquals("PlanWow", telefono.obtenerPlan().obtenerNombre());
 	}
 

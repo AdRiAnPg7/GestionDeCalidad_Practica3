@@ -5,7 +5,7 @@ import Entidades.CDR;
 
 public class TarifaAmigo implements ITarifaStrategy {
 	
-	private static final int _LIMITE_DE_AMIGOS = 4;
+	private static final int LIMITE_DE_AMIGOS = 4;
 
 	float tarifaBsMinuto = 0.99f;
 	
@@ -21,7 +21,7 @@ public class TarifaAmigo implements ITarifaStrategy {
 	
 
 	public void aniadirTelefonosAmigos(int nuevoAmigo) {
-		if(cantidadNumerosAmigos < _LIMITE_DE_AMIGOS) {
+		if(cantidadNumerosAmigos < LIMITE_DE_AMIGOS) {
 			numerosAmigos.add(nuevoAmigo);
 			cantidadNumerosAmigos++;
 		}	
