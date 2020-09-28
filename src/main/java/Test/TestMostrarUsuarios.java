@@ -6,9 +6,7 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
 
-
-import CasosUso.MostrarUsuarios;
-
+import Casosdeuso.*;
 import Entidades.LineaTelefonica;
 
 class TestMostrarUsuarios {

@@ -6,8 +6,7 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
 
-import CasosUso.MostrarCDRs;
-
+import Casosdeuso.*;
 import Entidades.CDR;
 
 

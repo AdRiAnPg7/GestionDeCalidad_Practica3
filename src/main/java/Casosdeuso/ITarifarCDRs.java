@@ -1,4 +1,4 @@
-package CasosUso;
+package Casosdeuso;
 
 public interface ITarifarCDRs {
 

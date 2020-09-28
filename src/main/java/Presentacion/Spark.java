@@ -8,13 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import CasosUso.CalcularCDRs;
-import CasosUso.CargarCDRs;
-import CasosUso.CargarUsuarios;
-import CasosUso.IMostrarCDRs;
-import CasosUso.IMostrarUsuarios;
-import CasosUso.MostrarCDRs;
-import CasosUso.MostrarUsuarios;
+import Casosdeuso.*;
 import Entidades.CDR;
 import Entidades.LineaTelefonica;
 import Persistencia.IRepositorio;

@@ -1,6 +1,9 @@
 package Entidades;
 import java.time.LocalTime;
 
+import org.apache.log4j.Logger;
+
+
 public class CDR {
 	public LineaTelefonica telefonoOrigen;
 	public LineaTelefonica telefonoDestino;
@@ -9,6 +12,7 @@ public class CDR {
 	public LocalTime tiempoDuracionLlamada;
 	
 	float costo;
+	Logger logger = Logger.getLogger(Class.class);
 	
 	public CDR (LineaTelefonica telefonoOrigen, 
 				LineaTelefonica telefonoDestino, 
@@ -87,7 +91,7 @@ public class CDR {
 	}
 	
 	public void mostrarCDR() {
-		System.out.println(telefonoOrigen.obtenerNumero() + " " +
+		logger.debug(telefonoOrigen.obtenerNumero() + " " +
 							telefonoDestino.obtenerNumero() + " " +
 							fecha + " " +
 							horaInicioLlamada + " " +
