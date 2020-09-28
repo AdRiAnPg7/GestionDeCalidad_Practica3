@@ -9,6 +9,8 @@ import java.sql.SQLException;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
+import org.apache.log4j.Logger;
+
 import Entidades.CDR;
 import Entidades.LineaTelefonica;
 import Planes.PlanPostPago;
@@ -30,17 +32,18 @@ public class RegistrosSQL implements IRepositorio {
 	int cantidadCDRs=0;
 	String CDRsPath = "C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonia.db";
 	String TelefonosPath = "C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonos.db";
-
+	Logger logger = Logger.getLogger(Class.class);
+	
 	public void connect(String Path){
 		String filePath = Path;
 		try {
-			System.out.println("jdbc:sqlite:" + filePath);
+			logger.debug("jdbc:sqlite:" + filePath);
 			conexion = DriverManager.getConnection("jdbc:sqlite:" + filePath);
-			if( conexion != null) {
-				System.out.println("Conectado");
+			if( conexion != null ) {
+				logger.debug("Conectado");
 			}
 		} catch (SQLException exception){
-			System.out.println("No se Ha Podido Conectar a La Base De Datos\n" + exception.getMessage());
+			logger.debug("No se Ha Podido Conectar a La Base De Datos\n" + exception.getMessage());
 		}
 	}
 	
@@ -48,7 +51,7 @@ public class RegistrosSQL implements IRepositorio {
 		try {
 			conexion.close();
 		}catch (SQLException exception){
-			System.out.println("No se Ha Podido Cerrar la Base De Datos\n" + exception.getMessage());
+			logger.debug("No se Ha Podido Cerrar la Base De Datos\n" + exception.getMessage());
 		}
 	}
 	
@@ -70,15 +73,15 @@ public class RegistrosSQL implements IRepositorio {
 				var planPostPago = new PlanPostPago ();
 				planPostPago.aniadirTarifa(new TarifaNormal() );
 				var telfOrigen = new LineaTelefonica(Integer.parseInt(result.getString("telefonoOrigen")), planPostPago);
-				System.out.println(telfOrigen.obtenerNumero());
+				logger.debug(telfOrigen.obtenerNumero());
 				var telfDestino = new LineaTelefonica(Integer.parseInt(result.getString("telefonoDestino")), null);
-				System.out.println(telfDestino.obtenerNumero());
+				logger.debug(telfDestino.obtenerNumero());
 				var HoraInicioLlamada = LocalTime.parse(result.getString("horaInicioLlamada"));
-				System.out.println(HoraInicioLlamada);
+				logger.debug(HoraInicioLlamada);
 				var DuracionLlamada = LocalTime.parse(result.getString("duracionLlamada"));
-				System.out.println(DuracionLlamada);
+				logger.debug(DuracionLlamada);
 				var fechaLlamada = result.getString("fechaLlamada");
-				System.out.println(DuracionLlamada);
+				logger.debug(DuracionLlamada);
 				cantidadCDRs++;
 				cantidadUsuarios++;
 				CDR temporal = new CDR(telfOrigen,telfDestino,HoraInicioLlamada,DuracionLlamada, fechaLlamada);
@@ -87,7 +90,7 @@ public class RegistrosSQL implements IRepositorio {
 			}
 			
 		} catch(SQLException exception){
-			System.out.println(exception.getMessage());
+			logger.debug(exception.getMessage());
 		}
 		close();
 	}
@@ -95,7 +98,7 @@ public class RegistrosSQL implements IRepositorio {
 	@Override
 	public void mostrarCDRs() {
 		for (CDR CDR: CDRs) {
-		    System.out.println(CDR.obtenerNumeroDelTelefonoOrigen() + " " +
+			logger.debug(CDR.obtenerNumeroDelTelefonoOrigen() + " " +
 		    				   CDR.obtenerNumeroDelTelefonoDestino() + " " +
 		    				   CDR.obtenerHoraInicioLlamada() + " " +
 		    				   CDR.obtenerDuracionLlamada());
@@ -115,7 +118,7 @@ public class RegistrosSQL implements IRepositorio {
 			}
 			
 		} catch(SQLException exception){
-			System.out.println(exception.getMessage());
+			logger.debug(exception.getMessage());
 		}finally {
 			close();
 		}
@@ -178,10 +181,10 @@ public class RegistrosSQL implements IRepositorio {
 		   
 	        try{
 	        	connect(CDRsPath); 
-	        	System.out.println("ANtes del FOR");
+	        	
 	        	for (CDR CDR: CDRs) {
-	        		System.out.println("Dentro del FOR");
-	        		System.out.println(CDR.obtenerCosto());
+	        		
+	        		logger.debug(CDR.obtenerCosto());
 	        		  try(PreparedStatement posted = conexion.prepareStatement(
 	  	            		"UPDATE cdr SET costo=" +CDR.obtenerCosto()+" WHERE id = " +indice);
 	        				  ){
@@ -191,9 +194,11 @@ public class RegistrosSQL implements IRepositorio {
 	        		   
 	    		}
 	          
-	        } catch(Exception e){System.out.println(e);}
+	        } catch(Exception e){
+	        	logger.debug(e);
+	        	}
 	        finally {
-	            System.out.println("Insert Completed.");
+	        	logger.debug("Insert Completed.");
 	        }
 	        close();
 

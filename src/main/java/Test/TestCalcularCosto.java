@@ -5,8 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import CasosUso.CalcularCDRs;
-
+import Casosdeuso.*;
 import Persistencia.RegistrosSQL;
 
 
