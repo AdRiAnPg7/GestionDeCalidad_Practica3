@@ -11,6 +11,8 @@ import java.nio.file.Paths;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
+import org.apache.log4j.Logger;
+
 import Entidades.CDR;
 import Entidades.LineaTelefonica;
 import Entidades.Llamada;
@@ -27,6 +29,7 @@ public class RegistrosCSV implements IRepositorio {
 	ArrayList <LineaTelefonica> usuarios  = new ArrayList<LineaTelefonica>();
 	int cantidadUsuarios=0;
 	int cantidadCDRs=0;
+	Logger logger = Logger.getLogger(Class.class);
 	
 	public RegistrosCSV(){
 		//Empty Constructor
@@ -56,7 +59,7 @@ public class RegistrosCSV implements IRepositorio {
 				CDRs.add(temporal);
 			}
 		} catch(Exception e){
-			System.err.println("No se encontro archivo aaaaaa");
+			logger.debug("No se encontro archivo");
 		}
 	}
 	
@@ -81,7 +84,7 @@ public class RegistrosCSV implements IRepositorio {
 				asignarPlan(datosDeLinea);
 			}
 		} catch(Exception e){
-			System.err.println("No se encontro archivo eee");
+			logger.debug("No se encontro archivo eee");
 		}
 	}
 
@@ -184,7 +187,7 @@ public class RegistrosCSV implements IRepositorio {
             pw.close();
             
         } catch (Exception e) {
-        	System.err.println("No se pudo crear archivo");
+        	logger.debug("No se pudo crear archivo");
         }
         
 	}
