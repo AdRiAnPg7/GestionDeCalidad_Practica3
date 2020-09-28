@@ -87,7 +87,7 @@ body{
 	<div class="card">
 		<div class="title-Container">
 			<div class="title">
-				<h1>$Title </h1>
+				<h1>$TitleCDRsTarificados </h1>
 			</div>
 		
 		</div>

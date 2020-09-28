@@ -2,8 +2,8 @@ package Entidades;
 import java.time.LocalTime;
 
 public class Llamada {
-	private static final double _FACTOR_DE_REDONDEO = 100.0;
-	private static final float _FACTOR_DE_CONVERSION_A_MINUTOS = 60.00f;
+	private static final double FACTOR_DE_REDONDEO = 100.0;
+	private static final float FACTOR_DE_CONVERSION_A_MINUTOS = 60.00f;
 	float minutos, costo;
 	CDR CDR;
 	
@@ -27,11 +27,11 @@ public class Llamada {
 	}
 	
 	public float obtenerCantidadMinutos(LocalTime tiempoDuracionLlamada) {
-		return (tiempoDuracionLlamada.getHour() * _FACTOR_DE_CONVERSION_A_MINUTOS) + tiempoDuracionLlamada.getMinute() + (tiempoDuracionLlamada.getSecond() / _FACTOR_DE_CONVERSION_A_MINUTOS); 
+		return (tiempoDuracionLlamada.getHour() * FACTOR_DE_CONVERSION_A_MINUTOS) + tiempoDuracionLlamada.getMinute() + (tiempoDuracionLlamada.getSecond() / FACTOR_DE_CONVERSION_A_MINUTOS); 
 	}
 	
 	protected float redondearCosto(float tarifa) {
-		return (float) (Math.round(tarifa * _FACTOR_DE_REDONDEO)/_FACTOR_DE_REDONDEO);
+		return (float) (Math.round(tarifa * FACTOR_DE_REDONDEO)/FACTOR_DE_REDONDEO);
 	}
 
 }
