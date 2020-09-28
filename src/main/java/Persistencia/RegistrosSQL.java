@@ -22,6 +22,7 @@ import Tarifas.TarifaHorarios;
 
 public class RegistrosSQL implements IRepositorio {
 	
+	private static final String TELEFONO = "Telefono";
 	ArrayList <CDR> CDRs  = new ArrayList<CDR>();
 	ArrayList <LineaTelefonica> usuarios  = new ArrayList<LineaTelefonica>();
 	Connection conexion;
@@ -60,11 +61,11 @@ public class RegistrosSQL implements IRepositorio {
 	@Override
 	public void leerCDRs() {
 		connect(CDRsPath);
-		ResultSet result = null;
-		try (
-				PreparedStatement st = conexion.prepareStatement("select * from cdr");
+	
+		try (	PreparedStatement st = conexion.prepareStatement("select * from cdr");
+				ResultSet result = st.executeQuery();
 				){
-			result = st.executeQuery();
+			
 			while (result.next()) {
 				var planPostPago = new PlanPostPago ();
 				planPostPago.aniadirTarifa(new TarifaNormal() );
@@ -104,55 +105,70 @@ public class RegistrosSQL implements IRepositorio {
 	@Override
 	public void cargarPlanATelefonos() {
 		connect(TelefonosPath);
-		ResultSet result = null;
-		try (PreparedStatement st = conexion.prepareStatement("select * from Telefonia");){
+		
+		try (	PreparedStatement st = conexion.prepareStatement("select * from Telefonia");
+				ResultSet result = st.executeQuery();
+				){
 			
-			result = st.executeQuery();
 			while (result.next()) {
 				asignarPlan(result);
 			}
 			
 		} catch(SQLException exception){
 			System.out.println(exception.getMessage());
+		}finally {
+			close();
 		}
-		close();
+		
 		
 	}
 
 	private void asignarPlan(ResultSet result) throws NumberFormatException, SQLException {
 		
 		if("PlanPrePago".equals(result.getString("Plan")) ) {
-			for (CDR CDR: CDRs) {
-			    if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(result.getString("Telefono"))) {
-			    	var tarifa = new TarifaHorarios();
-			    	var plan = new PlanPrePago();
-			    	plan.aniadirTarifa(tarifa);
-			    	CDR.telefonoOrigen.aniadirPlan(plan);
-			    }
-			}
+			asignarPlanPrePago(result);
 		}
 		else if("PlanPostPago".equals(result.getString("Plan")) ) {
-			for (CDR CDR: CDRs) {
-			    if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(result.getString("Telefono"))) {
-			    	var tarifa = new TarifaNormal();
-			    	var plan = new PlanPrePago();
-			    	plan.aniadirTarifa(tarifa);
-			    	CDR.telefonoOrigen.aniadirPlan(plan);
-			    }
-			}
+			asignarPlanPostPago(result);
 		}
 		else if("PlanWow".equals(result.getString("Plan"))) {
-			for (CDR CDR: CDRs) {
-			    if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(result.getString("Telefono"))) {
-			    	var tarifa = new TarifaAmigo();
-			    	var plan = new PlanWow();
-			    	tarifa.aniadirTelefonosAmigos(Integer.parseInt(result.getString("TelefonoAmigo")));
-			    	plan.aniadirTarifa(tarifa);
-			    	CDR.telefonoOrigen.aniadirPlan(plan);
-			    }
-			}
+			asignarPlanWow(result);
 		}
 		
+	}
+
+	private void asignarPlanWow(ResultSet result) throws SQLException {
+		for (CDR CDR: CDRs) {
+		    if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(result.getString(TELEFONO))) {
+		    	var tarifa = new TarifaAmigo();
+		    	var plan = new PlanWow();
+		    	tarifa.aniadirTelefonosAmigos(Integer.parseInt(result.getString("TelefonoAmigo")));
+		    	plan.aniadirTarifa(tarifa);
+		    	CDR.telefonoOrigen.aniadirPlan(plan);
+		    }
+		}
+	}
+
+	private void asignarPlanPostPago(ResultSet result) throws SQLException {
+		for (CDR CDR: CDRs) {
+		    if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(result.getString(TELEFONO))) {
+		    	var tarifa = new TarifaNormal();
+		    	var plan = new PlanPrePago();
+		    	plan.aniadirTarifa(tarifa);
+		    	CDR.telefonoOrigen.aniadirPlan(plan);
+		    }
+		}
+	}
+
+	private void asignarPlanPrePago(ResultSet result) throws SQLException {
+		for (CDR CDR: CDRs) {
+		    if(String.valueOf(CDR.obtenerNumeroDelTelefonoOrigen()).equals(result.getString(TELEFONO))) {
+		    	var tarifa = new TarifaHorarios();
+		    	var plan = new PlanPrePago();
+		    	plan.aniadirTarifa(tarifa);
+		    	CDR.telefonoOrigen.aniadirPlan(plan);
+		    }
+		}
 	}
 
 	@Override
