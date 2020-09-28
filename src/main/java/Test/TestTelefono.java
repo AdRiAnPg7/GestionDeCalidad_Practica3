@@ -20,9 +20,7 @@ class TestTelefono {
 	IPlan planPrePago = new PlanPrePago();
 	IPlan planPostPago = new PlanPostPago();
 	IPlan planWow= new PlanWow();
-	String NAME1= ;
-	String NAME2= NAME2;
-	String NAME3= NAME3;
+
 	
 	
 	@Test
