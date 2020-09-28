@@ -2,5 +2,11 @@ projectKey=org.sonarqube:java-sonar-runner-simple
 serverUrl=http://localhost:9003
 serverVersion=8.4.2.36762
 dashboardUrl=http://localhost:9003/dashboard?id=org.sonarqube%3Ajava-sonar-runner-simple
+<<<<<<< HEAD
 ceTaskId=AXTVyjmCCLURdejS5YiO
 ceTaskUrl=http://localhost:9003/api/ce/task?id=AXTVyjmCCLURdejS5YiO
+=======
+solving-critical-code-smells
+ceTaskId=AXTVpjLFCLURdejS5YiI
+ceTaskUrl=http://localhost:9003/api/ce/task?id=AXTVpjLFCLURdejS5YiI
+>>>>>>> 7cacd1a9949bfb9d03ec32b27a16e29e43a074c8

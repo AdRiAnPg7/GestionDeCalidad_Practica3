@@ -1,5 +1,6 @@
 package CasosUso;
 
+
 import Persistencia.IRepositorio;
 
 public class CargarUsuarios implements ICargarUsuarios{

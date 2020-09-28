@@ -80,7 +80,7 @@ background-color: #f2f2f2;
 	<div class="card">
 		<div class="title-Container">
 			<div class="title">
-				<h1>$Title </h1>
+				<h1>$TitleCDRs </h1>
 			</div>
 	
 		</div>
