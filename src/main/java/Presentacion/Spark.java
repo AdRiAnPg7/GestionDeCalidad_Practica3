@@ -57,7 +57,7 @@ public class Spark implements IPresentacion {
 			 	mostrarCDRs = new MostrarCDRs(CDRs);
 	        	Map<String, Object> model = new HashMap<>();
 	        	model.put("CDRs", mostrarCDRs.obtenerCDRs());      
-	        	model.put("Title","CDRs");
+	        	model.put("TitleCDRs","CDRs");
 	        	return new VelocityTemplateEngine().render(new ModelAndView(model, "velocity/CDRs/CDRs.vm"));
 	        });
 		 
@@ -71,7 +71,7 @@ public class Spark implements IPresentacion {
 			 	
 	        	Map<String, Object> model = new HashMap<>();
 	        	model.put("CDRs", mostrarCDRs.obtenerCDRs() );      
-	        	model.put("Title","CDRs");
+	        	model.put("TitleCDRs","CDRs");
 	        	return new VelocityTemplateEngine().render(new ModelAndView(model, "velocity/CDRs/CDRs.vm"));
 	        });
 		 
@@ -93,7 +93,7 @@ public class Spark implements IPresentacion {
 			 	mostrarCDRs = new MostrarCDRs(CDRs);
 			  	Map<String, Object> model = new HashMap<>();
 	        	model.put("CDRs", mostrarCDRs.obtenerCDRs());
-	        	model.put("Title","CDRs Tarificados");
+	        	model.put("TitleCDRsTarificados","CDRs Tarificados");
 	        	return new VelocityTemplateEngine().render(new ModelAndView(model, "velocity/CDRs/CDRsTarificados.vm"));
 	        });
 		 
@@ -102,7 +102,7 @@ public class Spark implements IPresentacion {
 			 	mostrarCDRs = new MostrarCDRs(CDRs);
 			  	Map<String, Object> model = new HashMap<>();
 	        	model.put("CDRs", mostrarCDRs.obtenerCDRs());
-	        	model.put("Title",fecha.format(hoy));
+	        	model.put("TitleDate",fecha.format(hoy));
 	        	return new VelocityTemplateEngine().render(new ModelAndView(model, "velocity/Tarificaciones/Tarificaciones.vm"));
 	        });
 		 
