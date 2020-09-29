@@ -39,9 +39,7 @@ public class RegistrosSQL implements IRepositorio {
 		try {
 			logger.debug("jdbc:sqlite:" + filePath);
 			conexion = DriverManager.getConnection("jdbc:sqlite:" + filePath);
-			if( conexion != null ) {
-				logger.debug("Conectado");
-			}
+			logger.debug("Conectado");
 		} catch (SQLException exception){
 			logger.debug("No se Ha Podido Conectar a La Base De Datos\n" + exception.getMessage());
 		}

@@ -16,9 +16,22 @@ import Planes.PlanWow;
 import Tarifas.TarifaAmigo;
 
 class TestTarifaAmigo {
-
 	int numeroOrigen = 11111111;
 	int numeroDestino = 88888888;
+	LocalTime Duracion1Minuto = LocalTime.parse("00:01:00");
+	LocalTime Duracion2Minutos = LocalTime.parse("00:02:00");
+	LocalTime Duracion10Minutos = LocalTime.parse("00:10:00");
+	LocalTime Duracion1MinutoY10Segundos = LocalTime.parse("00:01:10");
+	LocalTime Duracion2MinutosY30Segundos = LocalTime.parse("00:02:30");
+	LocalTime Duracion10MinutosY55Segundos = LocalTime.parse("00:10:55");
+	LocalTime horaInicioLlamada = LocalTime.parse("00:02:35");
+	LineaTelefonica telefonoOrigen = new LineaTelefonica(numeroOrigen,null);
+	LineaTelefonica telefonoDestino = new LineaTelefonica(numeroDestino,null);
+	Llamada llamada = new Llamada() ;
+	IPlan planPrePago = new PlanPrePago();
+	IPlan planPostPago = new PlanPostPago();
+	IPlan planWow= new PlanWow();
+	
 	TarifaAmigo tarifaAmigo = new TarifaAmigo();
 	
 	int numeroAmigo1 = 10101010;
@@ -28,22 +41,7 @@ class TestTarifaAmigo {
 	int numeroAmigo3 = 33333333;
 	LineaTelefonica telefonoAmigo3 = new LineaTelefonica(numeroAmigo3,null);
 	int numeroAmigo4 = 44444444;
-	LineaTelefonica telefonoAmigo4 = new LineaTelefonica(numeroAmigo4,null);
-	IPlan planPrePago = new PlanPrePago();
-	IPlan planPostPago = new PlanPostPago();
-	IPlan planWow= new PlanWow();
-	LocalTime horaInicioLlamada = LocalTime.parse("00:02:35");
-	LocalTime Duracion1Minuto = LocalTime.parse("00:01:00");
-	LocalTime Duracion2Minutos = LocalTime.parse("00:02:00");
-	LocalTime Duracion10Minutos = LocalTime.parse("00:10:00");
-	LocalTime Duracion1MinutoY10Segundos = LocalTime.parse("00:01:10");
-	LocalTime Duracion2MinutosY30Segundos = LocalTime.parse("00:02:30");
-	LocalTime Duracion10MinutosY55Segundos = LocalTime.parse("00:10:55");
-	
-	LineaTelefonica telefonoOrigen = new LineaTelefonica(numeroOrigen,null);
-	LineaTelefonica telefonoDestino = new LineaTelefonica(numeroDestino,null);
-	Llamada llamada = new Llamada() ;
-	
+	LineaTelefonica telefonoAmigo4 = new LineaTelefonica(numeroAmigo4,null);	
 	
 	@Test
 	void calcularTarifaAmigo() {
