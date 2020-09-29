@@ -1,5 +1,5 @@
 package Tarifas;
-import java.util.Vector;
+import java.util.ArrayList;
 
 import Entidades.CDR;
 
@@ -9,7 +9,7 @@ public class TarifaAmigo implements ITarifaStrategy {
 
 	float tarifaBsMinuto = 0.99f;
 	
-	Vector<Integer> numerosAmigos = new Vector <Integer>();
+	ArrayList<Integer> numerosAmigos = new ArrayList <Integer>();
 	int cantidadNumerosAmigos = 0;
 
 	public float calcularTarifa(CDR CDR) {
