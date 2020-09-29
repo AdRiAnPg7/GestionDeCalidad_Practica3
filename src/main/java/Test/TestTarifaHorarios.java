@@ -19,26 +19,30 @@ import Tarifas.TarifaHorarios;
 class TestTarifaHorarios {
 	
 	private static final String HORA_REDUCIDA = "00:39:50";
+	private static final String HORA_REDUCIDA2 = "00:02:35";
+	
 	int numeroOrigen = 11111111;
 	int numeroDestino = 88888888;
-	ITarifaStrategy tarifaHorario = new TarifaHorarios();
-	IPlan planPrePago = new PlanPrePago();
-	IPlan planPostPago = new PlanPostPago();
-	IPlan planWow= new PlanWow();
 	LocalTime Duracion1Minuto = LocalTime.parse("00:01:00");
 	LocalTime Duracion2Minutos = LocalTime.parse("00:02:00");
 	LocalTime Duracion10Minutos = LocalTime.parse("00:10:00");
 	LocalTime Duracion1MinutoY10Segundos = LocalTime.parse("00:01:10");
 	LocalTime Duracion2MinutosY30Segundos = LocalTime.parse("00:02:30");
 	LocalTime Duracion10MinutosY55Segundos = LocalTime.parse("00:10:55");
+	LocalTime horaInicioLlamada = LocalTime.parse(HORA_REDUCIDA2);
 	LineaTelefonica telefonoOrigen = new LineaTelefonica(numeroOrigen,null);
 	LineaTelefonica telefonoDestino = new LineaTelefonica(numeroDestino,null);
 	Llamada llamada = new Llamada() ;
+	IPlan planPrePago = new PlanPrePago();
+	IPlan planPostPago = new PlanPostPago();
+	IPlan planWow= new PlanWow();
+	
+	ITarifaStrategy tarifaHorario = new TarifaHorarios();
 	
 	
 	@Test
 	void calcularTarifaHorarioReducido() {
-		var horaInicioLlamada = LocalTime.parse("00:02:35");
+		var horaInicioLlamada = LocalTime.parse(HORA_REDUCIDA2);
 		var CDR= new CDR (telefonoOrigen,telefonoDestino,horaInicioLlamada,Duracion1Minuto);
 		
 		planPrePago.aniadirTarifa(tarifaHorario);
@@ -75,7 +79,7 @@ class TestTarifaHorarios {
 	
 	@Test
 	void calcularTarifaHorarioReducido4() {
-		var horaInicioLlamada = LocalTime.parse("00:02:35");
+		var horaInicioLlamada = LocalTime.parse(HORA_REDUCIDA2);
 		var CDR= new CDR (telefonoOrigen,telefonoDestino,horaInicioLlamada,Duracion1MinutoY10Segundos);
 		
 		planPrePago.aniadirTarifa(tarifaHorario);
