@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TarifaAmigo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ArquitecturaSoftware</a> &gt; <a href="index.source.html" class="el_package">Tarifas</a> &gt; <span class="el_source">TarifaAmigo.java</span></div><h1>TarifaAmigo.java</h1><pre class="source lang-java linenums">package Tarifas;
+import java.util.ArrayList;
+
+import Entidades.CDR;
+
+<span class="nc" id="L6">public class TarifaAmigo implements ITarifaStrategy {</span>
+	
+	private static final int LIMITE_DE_AMIGOS = 4;
+
+<span class="nc" id="L10">	float tarifaBsMinuto = 0.99f;</span>
+	
+<span class="nc" id="L12">	ArrayList&lt;Integer&gt; numerosAmigos = new ArrayList &lt;Integer&gt;();</span>
+<span class="nc" id="L13">	int cantidadNumerosAmigos = 0;</span>
+
+	public float calcularTarifa(CDR CDR) {
+<span class="nc bnc" id="L16" title="All 2 branches missed.">		if (numerosAmigos.contains(CDR.obtenerNumeroDelTelefonoDestino())) </span>
+<span class="nc" id="L17">			tarifaBsMinuto = 0.00f;</span>
+		
+<span class="nc" id="L19">		return tarifaBsMinuto;</span>
+	}
+	
+
+	public void aniadirTelefonosAmigos(int nuevoAmigo) {
+<span class="nc bnc" id="L24" title="All 2 branches missed.">		if(cantidadNumerosAmigos &lt; LIMITE_DE_AMIGOS) {</span>
+<span class="nc" id="L25">			numerosAmigos.add(nuevoAmigo);</span>
+<span class="nc" id="L26">			cantidadNumerosAmigos++;</span>
+		}	
+<span class="nc" id="L28">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

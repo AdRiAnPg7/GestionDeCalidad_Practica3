@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CDR.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ArquitecturaSoftware</a> &gt; <a href="index.source.html" class="el_package">Entidades</a> &gt; <span class="el_source">CDR.java</span></div><h1>CDR.java</h1><pre class="source lang-java linenums">package Entidades;
+import java.time.LocalTime;
+
+import org.apache.log4j.Logger;
+
+
+public class CDR {
+	public LineaTelefonica telefonoOrigen;
+	public LineaTelefonica telefonoDestino;
+	public String fecha;
+	public LocalTime horaInicioLlamada; 
+	public LocalTime tiempoDuracionLlamada;
+	
+	float costo;
+<span class="nc" id="L15">	Logger logger = Logger.getLogger(Class.class);</span>
+	
+<span class="nc" id="L17">	public CDR (LineaTelefonica telefonoOrigen, </span>
+				LineaTelefonica telefonoDestino, 
+				LocalTime horaInicioLlamada, 
+				LocalTime tiempoDuracionLlamada, 
+				String fecha) {
+<span class="nc" id="L22">		this.telefonoOrigen = telefonoOrigen;</span>
+<span class="nc" id="L23">		this.telefonoDestino = telefonoDestino;</span>
+<span class="nc" id="L24">		this.horaInicioLlamada = horaInicioLlamada;</span>
+<span class="nc" id="L25">		this.tiempoDuracionLlamada = tiempoDuracionLlamada;</span>
+<span class="nc" id="L26">		this.fecha = fecha;</span>
+<span class="nc" id="L27">	}</span>
+	
+	
+<span class="nc" id="L30">	public CDR (LineaTelefonica telefonoOrigen, </span>
+				LineaTelefonica telefonoDestino, 
+				LocalTime horaInicioLlamada, 
+				LocalTime tiempoDuracionLlamada) {
+<span class="nc" id="L34">		this.telefonoOrigen = telefonoOrigen;</span>
+<span class="nc" id="L35">		this.telefonoDestino = telefonoDestino;</span>
+<span class="nc" id="L36">		this.horaInicioLlamada = horaInicioLlamada;</span>
+<span class="nc" id="L37">		this.tiempoDuracionLlamada = tiempoDuracionLlamada;</span>
+<span class="nc" id="L38">		this.fecha = null;</span>
+<span class="nc" id="L39">	}</span>
+	
+	public LineaTelefonica obtenerTelefonoOrigen() {
+<span class="nc" id="L42">		return this.telefonoOrigen;</span>
+	}
+	
+	public LineaTelefonica obtenerTelefonoDestino() {
+<span class="nc" id="L46">		return this.telefonoDestino;</span>
+	}
+	
+	public LocalTime obtenerHoraInicioLlamada() {
+<span class="nc" id="L50">		return this.horaInicioLlamada;</span>
+	}
+	
+	public LocalTime obtenerDuracionLlamada() {
+<span class="nc" id="L54">		return this.tiempoDuracionLlamada;</span>
+	}
+	
+	public String obtenerFecha() {
+<span class="nc" id="L58">		return this.fecha;</span>
+	}
+	
+	public void aniadirTelefonoOrigen(LineaTelefonica telefono) {
+<span class="nc" id="L62">		this.telefonoOrigen = telefono;</span>
+<span class="nc" id="L63">	}</span>
+	
+	public void aniadirTelefonoDestino(LineaTelefonica telefono) {
+<span class="nc" id="L66">		this.telefonoDestino = telefono;</span>
+<span class="nc" id="L67">	}</span>
+	
+	public void aniadirHoraInicioLlamada(LocalTime Hora) {
+<span class="nc" id="L70">		this.horaInicioLlamada = Hora;</span>
+<span class="nc" id="L71">	}</span>
+	
+	public void aniadirFecha(String fecha) {
+<span class="nc" id="L74">		this.fecha = fecha;</span>
+<span class="nc" id="L75">	}</span>
+	
+	public void aniadirDuracionLlamada(LocalTime DuracionLlamada) {
+<span class="nc" id="L78">		this.tiempoDuracionLlamada = DuracionLlamada;</span>
+<span class="nc" id="L79">	}</span>
+	
+	public int obtenerNumeroDelTelefonoDestino() {
+<span class="nc" id="L82">		return telefonoDestino.obtenerNumero();</span>
+	}
+	
+	public int obtenerNumeroDelTelefonoOrigen() {
+<span class="nc" id="L86">		return telefonoOrigen.obtenerNumero();</span>
+	}
+	
+	public float obtenerTarifa(CDR CDR) {
+<span class="nc" id="L90">		return telefonoOrigen.obtenerTarifaDelPlan(CDR);</span>
+	}
+	
+	public void mostrarCDR() {
+<span class="nc" id="L94">		logger.debug(telefonoOrigen.obtenerNumero() + &quot; &quot; +</span>
+<span class="nc" id="L95">							telefonoDestino.obtenerNumero() + &quot; &quot; +</span>
+<span class="nc" id="L96">							fecha + &quot; &quot; +</span>
+<span class="nc" id="L97">							horaInicioLlamada + &quot; &quot; +</span>
+<span class="nc" id="L98">							tiempoDuracionLlamada );</span>
+<span class="nc" id="L99">	}</span>
+	
+	public float obtenerCosto() {
+<span class="nc" id="L102">		var CDR = new CDR(telefonoOrigen,telefonoDestino,horaInicioLlamada,tiempoDuracionLlamada);</span>
+<span class="nc" id="L103">		var llamada = new Llamada(CDR);</span>
+<span class="nc" id="L104">		return llamada.calcularCosto();</span>
+	}
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

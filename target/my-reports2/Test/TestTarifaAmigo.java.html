@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TestTarifaAmigo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ArquitecturaSoftware</a> &gt; <a href="index.source.html" class="el_package">Test</a> &gt; <span class="el_source">TestTarifaAmigo.java</span></div><h1>TestTarifaAmigo.java</h1><pre class="source lang-java linenums">package Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.time.LocalTime;
+
+import org.junit.jupiter.api.Test;
+
+import Entidades.CDR;
+import Entidades.LineaTelefonica;
+import Entidades.Llamada;
+import Planes.IPlan;
+import Planes.PlanPostPago;
+import Planes.PlanPrePago;
+import Planes.PlanWow;
+import Tarifas.TarifaAmigo;
+
+<span class="nc" id="L18">class TestTarifaAmigo {</span>
+<span class="nc" id="L19">	int numeroOrigen = 11111111;</span>
+<span class="nc" id="L20">	int numeroDestino = 88888888;</span>
+<span class="nc" id="L21">	LocalTime Duracion1Minuto = LocalTime.parse(&quot;00:01:00&quot;);</span>
+<span class="nc" id="L22">	LocalTime Duracion2Minutos = LocalTime.parse(&quot;00:02:00&quot;);</span>
+<span class="nc" id="L23">	LocalTime Duracion10Minutos = LocalTime.parse(&quot;00:10:00&quot;);</span>
+<span class="nc" id="L24">	LocalTime Duracion1MinutoY10Segundos = LocalTime.parse(&quot;00:01:10&quot;);</span>
+<span class="nc" id="L25">	LocalTime Duracion2MinutosY30Segundos = LocalTime.parse(&quot;00:02:30&quot;);</span>
+<span class="nc" id="L26">	LocalTime Duracion10MinutosY55Segundos = LocalTime.parse(&quot;00:10:55&quot;);</span>
+<span class="nc" id="L27">	LocalTime horaInicioLlamada = LocalTime.parse(&quot;00:02:35&quot;);</span>
+<span class="nc" id="L28">	LineaTelefonica telefonoOrigen = new LineaTelefonica(numeroOrigen,null);</span>
+<span class="nc" id="L29">	LineaTelefonica telefonoDestino = new LineaTelefonica(numeroDestino,null);</span>
+<span class="nc" id="L30">	Llamada llamada = new Llamada() ;</span>
+<span class="nc" id="L31">	IPlan planPrePago = new PlanPrePago();</span>
+<span class="nc" id="L32">	IPlan planPostPago = new PlanPostPago();</span>
+<span class="nc" id="L33">	IPlan planWow= new PlanWow();</span>
+	
+<span class="nc" id="L35">	TarifaAmigo tarifaAmigo = new TarifaAmigo();</span>
+	
+<span class="nc" id="L37">	int numeroAmigo1 = 10101010;</span>
+<span class="nc" id="L38">	LineaTelefonica telefonoAmigo1 = new LineaTelefonica(numeroAmigo1,null);</span>
+<span class="nc" id="L39">	int numeroAmigo2 = 22222222;</span>
+<span class="nc" id="L40">	LineaTelefonica telefonoAmigo2 = new LineaTelefonica(numeroAmigo2,null);</span>
+<span class="nc" id="L41">	int numeroAmigo3 = 33333333;</span>
+<span class="nc" id="L42">	LineaTelefonica telefonoAmigo3 = new LineaTelefonica(numeroAmigo3,null);</span>
+<span class="nc" id="L43">	int numeroAmigo4 = 44444444;</span>
+<span class="nc" id="L44">	LineaTelefonica telefonoAmigo4 = new LineaTelefonica(numeroAmigo4,null);	</span>
+	
+	@Test
+	void calcularTarifaAmigo() {
+<span class="nc" id="L48">		var CDR= new CDR (telefonoOrigen,telefonoAmigo1,horaInicioLlamada,Duracion1Minuto);</span>
+		
+<span class="nc" id="L50">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo1);</span>
+<span class="nc" id="L51">		planPrePago.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L53">		telefonoOrigen.aniadirPlan(planPrePago);</span>
+<span class="nc" id="L54">		llamada.aniadirCDR(CDR);</span>
+		
+<span class="nc" id="L56">		assertEquals( 0.00f, llamada.calcularCosto());</span>
+<span class="nc" id="L57">	}</span>
+	
+	@Test
+	void calcularTarifaAmigo2() {
+<span class="nc" id="L61">		var CDR= new CDR (telefonoOrigen,telefonoAmigo2,horaInicioLlamada,Duracion1Minuto);</span>
+		
+<span class="nc" id="L63">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo2);</span>
+<span class="nc" id="L64">		planPostPago.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L66">		telefonoOrigen.aniadirPlan(	planPostPago);</span>
+<span class="nc" id="L67">		llamada.aniadirCDR(CDR);</span>
+		
+<span class="nc" id="L69">		assertEquals( 0.00f, llamada.calcularCosto());</span>
+<span class="nc" id="L70">	}</span>
+	
+	@Test
+	void calcularTarifaAmigo3() {
+<span class="nc" id="L74">		var CDR= new CDR (telefonoOrigen,telefonoAmigo3,horaInicioLlamada,Duracion1Minuto);</span>
+		
+<span class="nc" id="L76">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo3);</span>
+<span class="nc" id="L77">		planWow.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L79">		telefonoOrigen.aniadirPlan(	planWow);</span>
+<span class="nc" id="L80">		llamada.aniadirCDR(CDR);</span>
+		
+<span class="nc" id="L82">		assertEquals( 0.00f, llamada.calcularCosto());</span>
+<span class="nc" id="L83">	}</span>
+	
+	@Test
+	void calcularTarifaAmigo4() {
+<span class="nc" id="L87">		var CDR= new CDR (telefonoOrigen,telefonoDestino,horaInicioLlamada,Duracion1Minuto);</span>
+		
+<span class="nc" id="L89">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo1);</span>
+<span class="nc" id="L90">		planPrePago.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L92">		telefonoOrigen.aniadirPlan(planPrePago);</span>
+<span class="nc" id="L93">		llamada.aniadirCDR(CDR);</span>
+		
+<span class="nc" id="L95">		assertEquals( 0.99f, llamada.calcularCosto());</span>
+<span class="nc" id="L96">	}</span>
+	
+	@Test
+	void calcularTarifaAmigo5() {
+<span class="nc" id="L100">		var CDR= new CDR (telefonoOrigen,telefonoDestino,horaInicioLlamada,Duracion1Minuto);</span>
+		
+<span class="nc" id="L102">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo2);</span>
+<span class="nc" id="L103">		planPostPago.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L105">		telefonoOrigen.aniadirPlan(	planPostPago);</span>
+<span class="nc" id="L106">		llamada.aniadirCDR(CDR);</span>
+		
+<span class="nc" id="L108">		assertEquals( 0.99f, llamada.calcularCosto());</span>
+<span class="nc" id="L109">	}</span>
+	
+	@Test
+	void calcularTarifaAmigo6() {
+<span class="nc" id="L113">		var CDR= new CDR (telefonoOrigen,telefonoDestino,horaInicioLlamada,Duracion1Minuto);</span>
+		
+<span class="nc" id="L115">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo3);</span>
+<span class="nc" id="L116">		planWow.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L118">		telefonoOrigen.aniadirPlan(	planWow);</span>
+<span class="nc" id="L119">		llamada.aniadirCDR(CDR);</span>
+		
+<span class="nc" id="L121">		assertEquals( 0.99f, llamada.calcularCosto());</span>
+<span class="nc" id="L122">	}</span>
+	
+	@Test
+	void calcularTarifaAmigo7() {
+<span class="nc" id="L126">		var CDR= new CDR (telefonoOrigen,telefonoDestino,horaInicioLlamada,Duracion2Minutos);</span>
+		
+<span class="nc" id="L128">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo1);</span>
+<span class="nc" id="L129">		planPrePago.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L131">		telefonoOrigen.aniadirPlan(planPrePago);</span>
+<span class="nc" id="L132">		llamada.aniadirCDR(CDR);</span>
+		
+<span class="nc" id="L134">		assertEquals( 1.98f, llamada.calcularCosto());</span>
+<span class="nc" id="L135">	}</span>
+	
+	@Test
+	void calcularTarifaAmigo8() {
+<span class="nc" id="L139">		var CDR= new CDR (telefonoOrigen,telefonoDestino,horaInicioLlamada,Duracion10Minutos);</span>
+		
+<span class="nc" id="L141">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo2);</span>
+<span class="nc" id="L142">		planPostPago.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L144">		telefonoOrigen.aniadirPlan(	planPostPago);</span>
+<span class="nc" id="L145">		llamada.aniadirCDR(CDR);</span>
+		
+<span class="nc" id="L147">		assertEquals( 9.90f, llamada.calcularCosto());</span>
+<span class="nc" id="L148">	}</span>
+	
+	@Test
+	void calcularTarifaAmigo9() {
+<span class="nc" id="L152">		var CDR= new CDR (telefonoOrigen,telefonoDestino,horaInicioLlamada,Duracion1MinutoY10Segundos);</span>
+		
+<span class="nc" id="L154">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo3);</span>
+<span class="nc" id="L155">		planWow.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L157">		telefonoOrigen.aniadirPlan(	planWow);</span>
+<span class="nc" id="L158">		llamada.aniadirCDR(CDR);</span>
+		
+<span class="nc" id="L160">		assertEquals( 1.15f, llamada.calcularCosto());</span>
+<span class="nc" id="L161">	}</span>
+	
+	@Test
+	void calcularTarifaAmigo10() {
+<span class="nc" id="L165">		var CDR= new CDR (telefonoOrigen,telefonoDestino,horaInicioLlamada,Duracion2MinutosY30Segundos);</span>
+		
+<span class="nc" id="L167">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo3);</span>
+<span class="nc" id="L168">		planWow.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L170">		telefonoOrigen.aniadirPlan(	planWow);</span>
+<span class="nc" id="L171">		llamada.aniadirCDR(CDR);</span>
+		
+<span class="nc" id="L173">		assertEquals( 2.47f, llamada.calcularCosto());</span>
+<span class="nc" id="L174">	}</span>
+	@Test
+	void calcularTarifaAmigo11() {
+<span class="nc" id="L177">		var CDR= new CDR (telefonoOrigen,telefonoDestino,horaInicioLlamada,Duracion10MinutosY55Segundos);</span>
+		
+<span class="nc" id="L179">		tarifaAmigo.aniadirTelefonosAmigos(numeroAmigo3);</span>
+<span class="nc" id="L180">		planWow.aniadirTarifa(tarifaAmigo);</span>
+		
+<span class="nc" id="L182">		telefonoOrigen.aniadirPlan(	planWow);</span>
+<span class="nc" id="L183">		llamada.aniadirCDR(CDR);</span>
+	
+<span class="nc" id="L185">		assertEquals( 10.81f, llamada.calcularCosto());</span>
+<span class="nc" id="L186">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
