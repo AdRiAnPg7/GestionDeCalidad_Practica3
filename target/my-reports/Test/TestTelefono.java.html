@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TestTelefono.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ArquitecturaSoftware</a> &gt; <a href="index.source.html" class="el_package">Test</a> &gt; <span class="el_source">TestTelefono.java</span></div><h1>TestTelefono.java</h1><pre class="source lang-java linenums">package Test;
+
+import Planes.IPlan;
+import Planes.PlanPostPago;
+import Planes.PlanPrePago;
+import Planes.PlanWow;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import Entidades.LineaTelefonica;
+
+<span class="nc" id="L14">class TestTelefono {</span>
+	
+	private static final String NAME3 = &quot;Gamal&quot;;
+	private static final String NAME2 = &quot;Andres&quot;;
+	private static final String NAME1 = &quot;Adrian&quot;;
+<span class="nc" id="L19">	int numeroTelefono = 77556644;</span>
+<span class="nc" id="L20">	IPlan planPrePago = new PlanPrePago();</span>
+<span class="nc" id="L21">	IPlan planPostPago = new PlanPostPago();</span>
+<span class="nc" id="L22">	IPlan planWow= new PlanWow();</span>
+
+	
+	
+	@Test
+	void obtenerNumeroTelefonico() {
+<span class="nc" id="L28">		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,null);</span>
+<span class="nc" id="L29">		assertEquals(numeroTelefono, telefono.obtenerNumero());</span>
+<span class="nc" id="L30">	}</span>
+	
+	@Test
+	void obtenerPlanPrePago() {
+<span class="nc" id="L34">		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPrePago);</span>
+<span class="nc" id="L35">		assertEquals(&quot;PlanPrePago&quot;, telefono.obtenerPlan().obtenerNombre());</span>
+<span class="nc" id="L36">	}</span>
+	
+	@Test
+	void obtenerPlanPostPago() {
+<span class="nc" id="L40">		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPostPago);</span>
+<span class="nc" id="L41">		assertEquals(&quot;PlanPostPago&quot;, telefono.obtenerPlan().obtenerNombre());</span>
+<span class="nc" id="L42">	}</span>
+	
+	@Test
+	void obtenerPlanWow() {
+<span class="nc" id="L46">		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planWow);</span>
+<span class="nc" id="L47">		assertEquals(&quot;PlanWow&quot;, telefono.obtenerPlan().obtenerNombre());</span>
+<span class="nc" id="L48">	}</span>
+	
+	@Test
+	void obtenerNombreAdrian() {
+<span class="nc" id="L52">		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPrePago,NAME1);</span>
+<span class="nc" id="L53">		assertEquals(NAME1, telefono.obtenerNombre());</span>
+<span class="nc" id="L54">	}</span>
+	
+	@Test
+	void obtenerNombreAndres() {
+<span class="nc" id="L58">		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPostPago, NAME2);</span>
+<span class="nc" id="L59">		assertEquals(NAME2, telefono.obtenerNombre());</span>
+<span class="nc" id="L60">	}</span>
+	
+	@Test
+	void obtenerNombreGamal() {
+<span class="nc" id="L64">		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planWow, NAME3);</span>
+<span class="nc" id="L65">		assertEquals(NAME3, telefono.obtenerNombre());</span>
+<span class="nc" id="L66">	}</span>
+	
+	@Test
+	void obtenerTodosLosDatos() {
+<span class="nc" id="L70">		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPrePago, NAME1);</span>
+<span class="nc" id="L71">		assertEquals(numeroTelefono, telefono.obtenerNumero());</span>
+<span class="nc" id="L72">		assertEquals(NAME1, telefono.obtenerNombre());</span>
+<span class="nc" id="L73">		assertEquals(&quot;PlanPrePago&quot;, telefono.obtenerPlan().obtenerNombre());</span>
+<span class="nc" id="L74">	}</span>
+	@Test
+	void obtenerTodosLosDatos2() {
+<span class="nc" id="L77">		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPostPago, NAME2);</span>
+<span class="nc" id="L78">		assertEquals(numeroTelefono, telefono.obtenerNumero());</span>
+<span class="nc" id="L79">		assertEquals(NAME2, telefono.obtenerNombre());</span>
+<span class="nc" id="L80">		assertEquals(&quot;PlanPostPago&quot;, telefono.obtenerPlan().obtenerNombre());</span>
+<span class="nc" id="L81">	}</span>
+	@Test
+	void obtenerTodosLosDatos3() {
+<span class="nc" id="L84">		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planWow, NAME3);</span>
+<span class="nc" id="L85">		assertEquals(numeroTelefono, telefono.obtenerNumero());</span>
+<span class="nc" id="L86">		assertEquals(NAME3, telefono.obtenerNombre());</span>
+<span class="nc" id="L87">		assertEquals(&quot;PlanWow&quot;, telefono.obtenerPlan().obtenerNombre());</span>
+<span class="nc" id="L88">	}</span>
+
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

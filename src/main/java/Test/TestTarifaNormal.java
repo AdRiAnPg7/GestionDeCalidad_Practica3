@@ -17,10 +17,8 @@ import Tarifas.ITarifaStrategy;
 import Tarifas.TarifaNormal;
 
 class TestTarifaNormal {
-
 	int numeroOrigen = 11111111;
 	int numeroDestino = 88888888;
-	ITarifaStrategy tarifaNormal = new TarifaNormal();
 	IPlan planPrePago = new PlanPrePago();
 	IPlan planPostPago = new PlanPostPago();
 	IPlan planWow= new PlanWow();
@@ -34,6 +32,8 @@ class TestTarifaNormal {
 	LineaTelefonica telefonoOrigen = new LineaTelefonica(numeroOrigen,null);
 	LineaTelefonica telefonoDestino = new LineaTelefonica(numeroDestino,null);
 	Llamada llamada = new Llamada() ;
+	
+	ITarifaStrategy tarifaNormal = new TarifaNormal();
 	
 	
 	@Test
