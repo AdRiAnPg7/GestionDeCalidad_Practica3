@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="23" failures="0" name="TestSuite" time="0.012" errors="0" skipped="0">
+<testsuite tests="20" failures="0" name="TestSuite" time="0.399" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="13.0.2+8"/>
@@ -27,7 +27,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Program Files\Maven\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-13.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Java\jdk-13.0.2\bin;C:\Users\Adrian\Desktop\II_2020\Gestion de Calidad\sonar-scanner-4.4.0.2170-windows\bin;C:\Program Files\Maven\bin;C:\Program Files\flutter\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Users\Adrian\AppData\Local\Microsoft\WindowsApps;C:\Users\Adrian\AppData\Roaming\npm;C:\Users\Adrian\anaconda3;C:\Users\Adrian\anaconda3;C:\Users\Adrian\anaconda3\Scripts;C:\Users\Adrian\anaconda3\Library\bin;C:\Users\Adrian\.dotnet\tools;C:\Program Files\Sqlite3;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-13.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Java\jdk-13.0.2\bin;C:\Users\Adrian\Desktop\II_2020\Gestion de Calidad\sonar-scanner-4.4.0.2170-windows\bin;C:\Program Files\Maven\bin;C:\Program Files\flutter\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Users\Adrian\AppData\Local\Microsoft\WindowsApps;C:\Users\Adrian\AppData\Roaming\npm;C:\Users\Adrian\anaconda3;C:\Users\Adrian\anaconda3;C:\Users\Adrian\anaconda3\Scripts;C:\Users\Adrian\anaconda3\Library\bin;C:\Users\Adrian\.dotnet\tools;C:\Program Files\Sqlite3;C:\Users\Adrian\AppData\Local\GitHubDesktop\bin;."/>
     <property name="maven.conf" value="C:\Program Files\Maven\bin\../conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="57.0"/>
@@ -60,27 +60,24 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TestCasosDeUso.CalcularCDRsTest" name="test_CalcularCostos" time="0.003"/>
+  <testcase classname="TestCasosDeUso.CalcularCDRsTest" name="test_CalcularCostos" time="0.004"/>
   <testcase classname="TestCasosDeUso.CalcularCDRsTest" name="test_ObtenerNombreCasoDeUso" time="0.004"/>
-  <testcase classname="TestCasosDeUso.CargarCDRsTest" name="test_CargarCDRs" time="0.003"/>
+  <testcase classname="TestCasosDeUso.CargarCDRsTest" name="test_CargarCDRs" time="0.002"/>
   <testcase classname="TestCasosDeUso.CargarCDRsTest" name="test_ObtenerNombreCasoDeUso" time="0"/>
-  <testcase classname="TestCasosDeUso.CargarUsuariosTest" name="test_CargarUsuarios" time="0"/>
+  <testcase classname="TestCasosDeUso.CargarUsuariosTest" name="test_CargarUsuarios" time="0.001"/>
   <testcase classname="TestCasosDeUso.CargarUsuariosTest" name="test_ObtenerNombreCasoDeUso" time="0"/>
   <testcase classname="TestCasosDeUso.MostrarCDRsTest" name="test_ObtenerNombreCasoDeUso" time="0"/>
-  <testcase classname="TestCasosDeUso.MostrarCDRsTest" name="test_obtenerCDRs" time="0.001"/>
+  <testcase classname="TestCasosDeUso.MostrarCDRsTest" name="test_obtenerCDRs" time="0"/>
   <testcase classname="TestCasosDeUso.MostrarUsuariosTest" name="test_CargarUsuarios" time="0"/>
-  <testcase classname="TestCasosDeUso.MostrarUsuariosTest" name="test_ObtenerNombreCasoDeUso" time="0"/>
-  <testcase classname="TestCasosDeUso.TarifarCDRsTest" name="test_CalcularCostos" time="0"/>
+  <testcase classname="TestCasosDeUso.MostrarUsuariosTest" name="test_ObtenerNombreCasoDeUso" time="0.001"/>
+  <testcase classname="TestCasosDeUso.TarifarCDRsTest" name="test_CalcularCosto" time="0"/>
   <testcase classname="TestCasosDeUso.TarifarCDRsTest" name="test_ObtenerNombreCasoDeUso" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="obtenerNombreAdrian" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="obtenerNombreAndres" time="0.001"/>
-  <testcase classname="TestNG.TestCalculateCost" name="obtenerNombreGamal" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="obtenerNumeroTelefonico" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="obtenerPlanPostPago" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="obtenerPlanPrePago" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="obtenerPlanWow" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="obtenerTodosLosDatos" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="obtenerTodosLosDatos2" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="obtenerTodosLosDatos3" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="test1" time="0"/>
+  <testcase classname="TestNG.TestCalculateCost" name="test" time="0"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ConnectToTelefonossDB" time="0.105"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ErroronnectToTelefonossDB" time="0.001"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_LeerCDRs" time="0.013"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ConnectToCDRsDB" time="0.001"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_DisconnectFromDB" time="0"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_CargarPlanATelefonos" time="0.004"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_GuardarCDRsCalculados" time="0.263"/>
 </testsuite>

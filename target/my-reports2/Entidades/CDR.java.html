@@ -87,7 +87,7 @@ public class CDR {
 	}
 	
 	public float obtenerTarifa(CDR CDR) {
-<span class="nc" id="L90">		return telefonoOrigen.obtenerTarifaDelPlan(CDR);</span>
+<span class="fc" id="L90">		return telefonoOrigen.obtenerTarifaDelPlan(CDR);</span>
 	}
 	
 	public void mostrarCDR() {
@@ -99,9 +99,9 @@ public class CDR {
 <span class="nc" id="L99">	}</span>
 	
 	public float obtenerCosto() {
-<span class="nc" id="L102">		var CDR = new CDR(telefonoOrigen,telefonoDestino,horaInicioLlamada,tiempoDuracionLlamada);</span>
-<span class="nc" id="L103">		var llamada = new Llamada(CDR);</span>
-<span class="nc" id="L104">		return llamada.calcularCosto();</span>
+<span class="fc" id="L102">		var CDR = new CDR(telefonoOrigen,telefonoDestino,horaInicioLlamada,tiempoDuracionLlamada);</span>
+<span class="fc" id="L103">		var llamada = new Llamada(CDR);</span>
+<span class="fc" id="L104">		return llamada.calcularCosto();</span>
 	}
 	
 }

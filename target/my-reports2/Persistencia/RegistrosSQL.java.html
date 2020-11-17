@@ -22,36 +22,36 @@ import Tarifas.TarifaHorarios;
 
 
 
-<span class="nc" id="L25">public class RegistrosSQL implements IRepositorio {</span>
+<span class="fc" id="L25">public class RegistrosSQL implements IRepositorio {</span>
 	
 	private static final String TELEFONO = &quot;Telefono&quot;;
-<span class="nc" id="L28">	ArrayList &lt;CDR&gt; CDRs  = new ArrayList&lt;CDR&gt;();</span>
-<span class="nc" id="L29">	ArrayList &lt;LineaTelefonica&gt; usuarios  = new ArrayList&lt;LineaTelefonica&gt;();</span>
+<span class="fc" id="L28">	ArrayList &lt;CDR&gt; CDRs  = new ArrayList&lt;CDR&gt;();</span>
+<span class="fc" id="L29">	ArrayList &lt;LineaTelefonica&gt; usuarios  = new ArrayList&lt;LineaTelefonica&gt;();</span>
 	Connection conexion;
-<span class="nc" id="L31">	int cantidadUsuarios=0;</span>
-<span class="nc" id="L32">	int cantidadCDRs=0;</span>
-<span class="nc" id="L33">	String CDRsPath = &quot;C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonia.db&quot;;</span>
-<span class="nc" id="L34">	String TelefonosPath = &quot;C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonos.db&quot;;</span>
-<span class="nc" id="L35">	Logger logger = Logger.getLogger(Class.class);</span>
+<span class="fc" id="L31">	int cantidadUsuarios=0;</span>
+<span class="fc" id="L32">	int cantidadCDRs=0;</span>
+<span class="fc" id="L33">	String CDRsPath = &quot;C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonia.db&quot;;</span>
+<span class="fc" id="L34">	String TelefonosPath = &quot;C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonos.db&quot;;</span>
+<span class="fc" id="L35">	Logger logger = Logger.getLogger(Class.class);</span>
 	
 	public void connect(String Path){
-<span class="nc" id="L38">		String filePath = Path;</span>
+<span class="fc" id="L38">		String filePath = Path;</span>
 		try {
-<span class="nc" id="L40">			logger.debug(&quot;jdbc:sqlite:&quot; + filePath);</span>
-<span class="nc" id="L41">			conexion = DriverManager.getConnection(&quot;jdbc:sqlite:&quot; + filePath);</span>
-<span class="nc" id="L42">			logger.debug(&quot;Conectado&quot;);</span>
-<span class="nc" id="L43">		} catch (SQLException exception){</span>
+<span class="fc" id="L40">			logger.debug(&quot;jdbc:sqlite:&quot; + filePath);</span>
+<span class="fc" id="L41">			conexion = DriverManager.getConnection(&quot;jdbc:sqlite:&quot; + filePath);</span>
+<span class="fc" id="L42">			logger.debug(&quot;Conectado&quot;);</span>
+<span class="pc" id="L43">		} catch (SQLException exception){</span>
 <span class="nc" id="L44">			logger.debug(&quot;No se Ha Podido Conectar a La Base De Datos\n&quot; + exception.getMessage());</span>
 		}
-<span class="nc" id="L46">	}</span>
+<span class="fc" id="L46">	}</span>
 	
 	public void close() {
 		try {
-<span class="nc" id="L50">			conexion.close();</span>
-<span class="nc" id="L51">		}catch (SQLException exception){</span>
+<span class="fc" id="L50">			conexion.close();</span>
+<span class="pc" id="L51">		}catch (SQLException exception){</span>
 <span class="nc" id="L52">			logger.debug(&quot;No se Ha Podido Cerrar la Base De Datos\n&quot; + exception.getMessage());</span>
 		}
-<span class="nc" id="L54">	}</span>
+<span class="fc" id="L54">	}</span>
 	
 	@Override
 	public ArrayList&lt;CDR&gt; obtenerCDRs() {
@@ -61,37 +61,37 @@ import Tarifas.TarifaHorarios;
 	
 	@Override
 	public void leerCDRs() {
-<span class="nc" id="L64">		connect(CDRsPath);</span>
+<span class="fc" id="L64">		connect(CDRsPath);</span>
 	
-<span class="nc" id="L66">		try (	PreparedStatement st = conexion.prepareStatement(&quot;select * from cdr&quot;);</span>
-<span class="nc" id="L67">				ResultSet result = st.executeQuery();</span>
+<span class="fc" id="L66">		try (	PreparedStatement st = conexion.prepareStatement(&quot;select * from cdr&quot;);</span>
+<span class="fc" id="L67">				ResultSet result = st.executeQuery();</span>
 				){
 			
-<span class="nc bnc" id="L70" title="All 2 branches missed.">			while (result.next()) {</span>
-<span class="nc" id="L71">				var planPostPago = new PlanPostPago ();</span>
-<span class="nc" id="L72">				planPostPago.aniadirTarifa(new TarifaNormal() );</span>
-<span class="nc" id="L73">				var telfOrigen = new LineaTelefonica(Integer.parseInt(result.getString(&quot;telefonoOrigen&quot;)), planPostPago);</span>
-<span class="nc" id="L74">				logger.debug(telfOrigen.obtenerNumero());</span>
-<span class="nc" id="L75">				var telfDestino = new LineaTelefonica(Integer.parseInt(result.getString(&quot;telefonoDestino&quot;)), null);</span>
-<span class="nc" id="L76">				logger.debug(telfDestino.obtenerNumero());</span>
-<span class="nc" id="L77">				var HoraInicioLlamada = LocalTime.parse(result.getString(&quot;horaInicioLlamada&quot;));</span>
-<span class="nc" id="L78">				logger.debug(HoraInicioLlamada);</span>
-<span class="nc" id="L79">				var DuracionLlamada = LocalTime.parse(result.getString(&quot;duracionLlamada&quot;));</span>
-<span class="nc" id="L80">				logger.debug(DuracionLlamada);</span>
-<span class="nc" id="L81">				var fechaLlamada = result.getString(&quot;fechaLlamada&quot;);</span>
-<span class="nc" id="L82">				logger.debug(DuracionLlamada);</span>
-<span class="nc" id="L83">				cantidadCDRs++;</span>
-<span class="nc" id="L84">				cantidadUsuarios++;</span>
-<span class="nc" id="L85">				CDR temporal = new CDR(telfOrigen,telfDestino,HoraInicioLlamada,DuracionLlamada, fechaLlamada);</span>
+<span class="fc bfc" id="L70" title="All 2 branches covered.">			while (result.next()) {</span>
+<span class="fc" id="L71">				var planPostPago = new PlanPostPago ();</span>
+<span class="fc" id="L72">				planPostPago.aniadirTarifa(new TarifaNormal() );</span>
+<span class="fc" id="L73">				var telfOrigen = new LineaTelefonica(Integer.parseInt(result.getString(&quot;telefonoOrigen&quot;)), planPostPago);</span>
+<span class="fc" id="L74">				logger.debug(telfOrigen.obtenerNumero());</span>
+<span class="fc" id="L75">				var telfDestino = new LineaTelefonica(Integer.parseInt(result.getString(&quot;telefonoDestino&quot;)), null);</span>
+<span class="fc" id="L76">				logger.debug(telfDestino.obtenerNumero());</span>
+<span class="fc" id="L77">				var HoraInicioLlamada = LocalTime.parse(result.getString(&quot;horaInicioLlamada&quot;));</span>
+<span class="fc" id="L78">				logger.debug(HoraInicioLlamada);</span>
+<span class="fc" id="L79">				var DuracionLlamada = LocalTime.parse(result.getString(&quot;duracionLlamada&quot;));</span>
+<span class="fc" id="L80">				logger.debug(DuracionLlamada);</span>
+<span class="fc" id="L81">				var fechaLlamada = result.getString(&quot;fechaLlamada&quot;);</span>
+<span class="fc" id="L82">				logger.debug(DuracionLlamada);</span>
+<span class="fc" id="L83">				cantidadCDRs++;</span>
+<span class="fc" id="L84">				cantidadUsuarios++;</span>
+<span class="fc" id="L85">				CDR temporal = new CDR(telfOrigen,telfDestino,HoraInicioLlamada,DuracionLlamada, fechaLlamada);</span>
 				
-<span class="nc" id="L87">				CDRs.add(temporal);</span>
+<span class="fc" id="L87">				CDRs.add(temporal);</span>
 			}
 			
 <span class="nc" id="L90">		} catch(SQLException exception){</span>
 <span class="nc" id="L91">			logger.debug(exception.getMessage());</span>
 		}
-<span class="nc" id="L93">		close();</span>
-<span class="nc" id="L94">	}</span>
+<span class="fc" id="L93">		close();</span>
+<span class="fc" id="L94">	}</span>
 
 	@Override
 	public void mostrarCDRs() {
@@ -105,9 +105,9 @@ import Tarifas.TarifaHorarios;
 
 	@Override
 	public void cargarPlanATelefonos() {
-<span class="nc" id="L108">		connect(TelefonosPath);</span>
+<span class="fc" id="L108">		connect(TelefonosPath);</span>
 		
-<span class="nc" id="L110">		try (	PreparedStatement st = conexion.prepareStatement(&quot;select * from Telefonia&quot;);</span>
+<span class="pc" id="L110">		try (	PreparedStatement st = conexion.prepareStatement(&quot;select * from Telefonia&quot;);</span>
 <span class="nc" id="L111">				ResultSet result = st.executeQuery();</span>
 				){
 			
@@ -115,14 +115,14 @@ import Tarifas.TarifaHorarios;
 <span class="nc" id="L115">				asignarPlan(result);</span>
 			}
 			
-<span class="nc" id="L118">		} catch(SQLException exception){</span>
-<span class="nc" id="L119">			logger.debug(exception.getMessage());</span>
+<span class="fc" id="L118">		} catch(SQLException exception){</span>
+<span class="fc" id="L119">			logger.debug(exception.getMessage());</span>
 		}finally {
-<span class="nc" id="L121">			close();</span>
+<span class="fc" id="L121">			close();</span>
 		}
 		
 		
-<span class="nc" id="L125">	}</span>
+<span class="fc" id="L125">	}</span>
 
 	private void asignarPlan(ResultSet result) throws NumberFormatException, SQLException {
 		
@@ -175,32 +175,32 @@ import Tarifas.TarifaHorarios;
 	@Override
 	public void guardarCDRsCalculados(String fecha) {
 		        
-<span class="nc" id="L178">		        int indice = 1;</span>
+<span class="fc" id="L178">		        int indice = 1;</span>
 		   
 	        try{
-<span class="nc" id="L181">	        	connect(CDRsPath); </span>
+<span class="fc" id="L181">	        	connect(CDRsPath); </span>
 	        	
-<span class="nc bnc" id="L183" title="All 2 branches missed.">	        	for (CDR CDR: CDRs) {</span>
+<span class="fc bfc" id="L183" title="All 2 branches covered.">	        	for (CDR CDR: CDRs) {</span>
 	        		
-<span class="nc" id="L185">	        		logger.debug(CDR.obtenerCosto());</span>
-<span class="nc" id="L186">	        		  try(PreparedStatement posted = conexion.prepareStatement(</span>
-<span class="nc" id="L187">	  	            		&quot;UPDATE cdr SET costo=&quot; +CDR.obtenerCosto()+&quot; WHERE id = &quot; +indice);</span>
+<span class="fc" id="L185">	        		logger.debug(CDR.obtenerCosto());</span>
+<span class="fc" id="L186">	        		  try(PreparedStatement posted = conexion.prepareStatement(</span>
+<span class="fc" id="L187">	  	            		&quot;UPDATE cdr SET costo=&quot; +CDR.obtenerCosto()+&quot; WHERE id = &quot; +indice);</span>
 	        				  ){
-<span class="nc" id="L189">	        		  posted.executeUpdate();</span>
-<span class="nc" id="L190">	        		   indice = indice + 1;</span>
+<span class="fc" id="L189">	        		  posted.executeUpdate();</span>
+<span class="fc" id="L190">	        		   indice = indice + 1;</span>
 	        		  }
 	        		   
 	    		}
 	          
-<span class="nc" id="L195">	        } catch(Exception e){</span>
+<span class="pc" id="L195">	        } catch(Exception e){</span>
 <span class="nc" id="L196">	        	logger.debug(e);</span>
 	        	}
 	        finally {
-<span class="nc" id="L199">	        	logger.debug(&quot;Insert Completed.&quot;);</span>
+<span class="fc" id="L199">	        	logger.debug(&quot;Insert Completed.&quot;);</span>
 	        }
-<span class="nc" id="L201">	        close();</span>
+<span class="fc" id="L201">	        close();</span>
 
-<span class="nc" id="L203">	}</span>
+<span class="fc" id="L203">	}</span>
 
 	@Override
 	public ArrayList&lt;LineaTelefonica&gt; obtenerUsuarios() {
