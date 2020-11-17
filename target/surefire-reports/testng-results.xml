@@ -1,57 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-16T14:28:18 VET" name="TestNG.TestCalculateCost" finished-at="2020-11-16T14:28:18 VET" duration-ms="162">
+  <suite started-at="2020-11-17T10:07:54 VET" name="Command line suite" finished-at="2020-11-17T10:07:55 VET" duration-ms="210">
     <groups>
     </groups>
-    <test started-at="2020-11-16T14:28:18 VET" name="Command line test" finished-at="2020-11-16T14:28:18 VET" duration-ms="162">
+    <test started-at="2020-11-17T10:07:54 VET" name="Command line test" finished-at="2020-11-17T10:07:55 VET" duration-ms="210">
+      <class name="TestCasosDeUso.TarifarCDRsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.TarifarCDRsTest@4a68135e]" started-at="2020-11-17T10:07:55 VET" name="setup" finished-at="2020-11-17T10:07:55 VET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_CalcularCostos()[pri:0, instance:TestCasosDeUso.TarifarCDRsTest@4a68135e]" started-at="2020-11-17T10:07:55 VET" name="test_CalcularCostos" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CalcularCostos -->
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.TarifarCDRsTest@4a68135e]" started-at="2020-11-17T10:07:55 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerNombreCasoDeUso -->
+      </class> <!-- TestCasosDeUso.TarifarCDRsTest -->
+      <class name="TestCasosDeUso.CalcularCDRsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.CalcularCDRsTest@21a66d45]" started-at="2020-11-17T10:07:54 VET" name="setup" finished-at="2020-11-17T10:07:55 VET" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_CalcularCostos()[pri:0, instance:TestCasosDeUso.CalcularCDRsTest@21a66d45]" started-at="2020-11-17T10:07:55 VET" name="test_CalcularCostos" finished-at="2020-11-17T10:07:55 VET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CalcularCostos -->
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.CalcularCDRsTest@21a66d45]" started-at="2020-11-17T10:07:55 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T10:07:55 VET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerNombreCasoDeUso -->
+      </class> <!-- TestCasosDeUso.CalcularCDRsTest -->
+      <class name="TestCasosDeUso.CargarUsuariosTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.CargarUsuariosTest@63fdffcd]" started-at="2020-11-17T10:07:55 VET" name="setup" finished-at="2020-11-17T10:07:55 VET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_CargarUsuarios()[pri:0, instance:TestCasosDeUso.CargarUsuariosTest@63fdffcd]" started-at="2020-11-17T10:07:55 VET" name="test_CargarUsuarios" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CargarUsuarios -->
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.CargarUsuariosTest@63fdffcd]" started-at="2020-11-17T10:07:55 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T10:07:55 VET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerNombreCasoDeUso -->
+      </class> <!-- TestCasosDeUso.CargarUsuariosTest -->
       <class name="TestNG.TestCalculateCost">
-        <test-method signature="obtenerNombreAdrian()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="obtenerNombreAdrian" finished-at="2020-11-16T14:28:18 VET" duration-ms="12" status="PASS">
+        <test-method signature="obtenerNombreAdrian()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="obtenerNombreAdrian" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerNombreAdrian -->
-        <test-method signature="obtenerNombreAndres()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="obtenerNombreAndres" finished-at="2020-11-16T14:28:18 VET" duration-ms="1" status="PASS">
+        <test-method signature="obtenerNombreAndres()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="obtenerNombreAndres" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerNombreAndres -->
-        <test-method signature="obtenerNombreGamal()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="obtenerNombreGamal" finished-at="2020-11-16T14:28:18 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- obtenerNombreGamal -->
-        <test-method signature="obtenerNumeroTelefonico()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="obtenerNumeroTelefonico" finished-at="2020-11-16T14:28:18 VET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- obtenerNumeroTelefonico -->
-        <test-method signature="obtenerPlanPostPago()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="obtenerPlanPostPago" finished-at="2020-11-16T14:28:18 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- obtenerPlanPostPago -->
-        <test-method signature="obtenerPlanPrePago()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="obtenerPlanPrePago" finished-at="2020-11-16T14:28:18 VET" duration-ms="0" status="PASS">
+        <test-method signature="obtenerPlanPrePago()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="obtenerPlanPrePago" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerPlanPrePago -->
-        <test-method signature="obtenerPlanWow()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="obtenerPlanWow" finished-at="2020-11-16T14:28:18 VET" duration-ms="0" status="PASS">
+        <test-method signature="obtenerPlanPostPago()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="obtenerPlanPostPago" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- obtenerPlanWow -->
-        <test-method signature="obtenerTodosLosDatos2()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="obtenerTodosLosDatos2" finished-at="2020-11-16T14:28:18 VET" duration-ms="0" status="PASS">
+        </test-method> <!-- obtenerPlanPostPago -->
+        <test-method signature="obtenerNumeroTelefonico()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="obtenerNumeroTelefonico" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- obtenerTodosLosDatos2 -->
-        <test-method signature="obtenerTodosLosDatos()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="obtenerTodosLosDatos" finished-at="2020-11-16T14:28:18 VET" duration-ms="0" status="PASS">
+        </test-method> <!-- obtenerNumeroTelefonico -->
+        <test-method signature="obtenerNombreGamal()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="obtenerNombreGamal" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- obtenerNombreGamal -->
+        <test-method signature="obtenerTodosLosDatos()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="obtenerTodosLosDatos" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerTodosLosDatos -->
-        <test-method signature="obtenerTodosLosDatos3()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="obtenerTodosLosDatos3" finished-at="2020-11-16T14:28:18 VET" duration-ms="0" status="PASS">
+        <test-method signature="obtenerTodosLosDatos3()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="obtenerTodosLosDatos3" finished-at="2020-11-17T10:07:55 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerTodosLosDatos3 -->
-        <test-method signature="test1()[pri:0, instance:TestNG.TestCalculateCost@385ef531]" started-at="2020-11-16T14:28:18 VET" name="test1" finished-at="2020-11-16T14:28:18 VET" duration-ms="0" status="PASS">
+        <test-method signature="obtenerPlanWow()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="obtenerPlanWow" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- obtenerPlanWow -->
+        <test-method signature="obtenerTodosLosDatos2()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="obtenerTodosLosDatos2" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- obtenerTodosLosDatos2 -->
+        <test-method signature="test1()[pri:0, instance:TestNG.TestCalculateCost@46678e49]" started-at="2020-11-17T10:07:55 VET" name="test1" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
       </class> <!-- TestNG.TestCalculateCost -->
+      <class name="TestCasosDeUso.MostrarUsuariosTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.MostrarUsuariosTest@66f659e6]" started-at="2020-11-17T10:07:55 VET" name="setup" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.MostrarUsuariosTest@66f659e6]" started-at="2020-11-17T10:07:55 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerNombreCasoDeUso -->
+        <test-method signature="test_CargarUsuarios()[pri:0, instance:TestCasosDeUso.MostrarUsuariosTest@66f659e6]" started-at="2020-11-17T10:07:55 VET" name="test_CargarUsuarios" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CargarUsuarios -->
+      </class> <!-- TestCasosDeUso.MostrarUsuariosTest -->
+      <class name="TestCasosDeUso.CargarCDRsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.CargarCDRsTest@1f966492]" started-at="2020-11-17T10:07:55 VET" name="setup" finished-at="2020-11-17T10:07:55 VET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_CargarCDRs()[pri:0, instance:TestCasosDeUso.CargarCDRsTest@1f966492]" started-at="2020-11-17T10:07:55 VET" name="test_CargarCDRs" finished-at="2020-11-17T10:07:55 VET" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CargarCDRs -->
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.CargarCDRsTest@1f966492]" started-at="2020-11-17T10:07:55 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerNombreCasoDeUso -->
+      </class> <!-- TestCasosDeUso.CargarCDRsTest -->
+      <class name="TestCasosDeUso.MostrarCDRsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.MostrarCDRsTest@7428de63]" started-at="2020-11-17T10:07:55 VET" name="setup" finished-at="2020-11-17T10:07:55 VET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.MostrarCDRsTest@7428de63]" started-at="2020-11-17T10:07:55 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerNombreCasoDeUso -->
+        <test-method signature="test_obtenerCDRs()[pri:0, instance:TestCasosDeUso.MostrarCDRsTest@7428de63]" started-at="2020-11-17T10:07:55 VET" name="test_obtenerCDRs" finished-at="2020-11-17T10:07:55 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_obtenerCDRs -->
+      </class> <!-- TestCasosDeUso.MostrarCDRsTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- TestNG.TestCalculateCost -->
+  </suite> <!-- Command line suite -->
 </testng-results>

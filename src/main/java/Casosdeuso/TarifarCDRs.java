@@ -9,7 +9,7 @@ public class TarifarCDRs implements ITarifarCDRs {
 	
 	public TarifarCDRs( IRepositorio repositorio) {
 		this.repositorio = repositorio;
-		this.nombre="CasoDeUSoTarifarCDRs";
+		this.nombre="CasoDeUsoTarifarCDRs";
 	}
 
 	@Override

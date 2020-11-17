@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 17 10:07:54 VET 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (210 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.TestCalculateCost.obtenerNombreAdrian()'><b>obtenerNombreAdrian</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestNG.TestCalculateCost.obtenerNombreAndres()'><b>obtenerNombreAndres</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestNG.TestCalculateCost.obtenerNombreGamal()'><b>obtenerNombreGamal</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestNG.TestCalculateCost.obtenerNumeroTelefonico()'><b>obtenerNumeroTelefonico</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestNG.TestCalculateCost.obtenerPlanPostPago()'><b>obtenerPlanPostPago</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestNG.TestCalculateCost.obtenerPlanPrePago()'><b>obtenerPlanPrePago</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestNG.TestCalculateCost.obtenerPlanWow()'><b>obtenerPlanWow</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestNG.TestCalculateCost.obtenerTodosLosDatos()'><b>obtenerTodosLosDatos</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestNG.TestCalculateCost.obtenerTodosLosDatos2()'><b>obtenerTodosLosDatos2</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestNG.TestCalculateCost.obtenerTodosLosDatos3()'><b>obtenerTodosLosDatos3</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestNG.TestCalculateCost.test1()'><b>test1</b><br>Test class: TestNG.TestCalculateCost</td>
+<td></td>
+<td>0</td>
+<td>TestNG.TestCalculateCost@46678e49</td></tr>
+<tr>
+<td title='TestCasosDeUso.CalcularCDRsTest.test_CalcularCostos()'><b>test_CalcularCostos</b><br>Test class: TestCasosDeUso.CalcularCDRsTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.CalcularCDRsTest@21a66d45</td></tr>
+<tr>
+<td title='TestCasosDeUso.TarifarCDRsTest.test_CalcularCostos()'><b>test_CalcularCostos</b><br>Test class: TestCasosDeUso.TarifarCDRsTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.TarifarCDRsTest@4a68135e</td></tr>
+<tr>
+<td title='TestCasosDeUso.CargarCDRsTest.test_CargarCDRs()'><b>test_CargarCDRs</b><br>Test class: TestCasosDeUso.CargarCDRsTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.CargarCDRsTest@1f966492</td></tr>
+<tr>
+<td title='TestCasosDeUso.CargarUsuariosTest.test_CargarUsuarios()'><b>test_CargarUsuarios</b><br>Test class: TestCasosDeUso.CargarUsuariosTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.CargarUsuariosTest@63fdffcd</td></tr>
+<tr>
+<td title='TestCasosDeUso.MostrarUsuariosTest.test_CargarUsuarios()'><b>test_CargarUsuarios</b><br>Test class: TestCasosDeUso.MostrarUsuariosTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.MostrarUsuariosTest@66f659e6</td></tr>
+<tr>
+<td title='TestCasosDeUso.CalcularCDRsTest.test_ObtenerNombreCasoDeUso()'><b>test_ObtenerNombreCasoDeUso</b><br>Test class: TestCasosDeUso.CalcularCDRsTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.CalcularCDRsTest@21a66d45</td></tr>
+<tr>
+<td title='TestCasosDeUso.CargarCDRsTest.test_ObtenerNombreCasoDeUso()'><b>test_ObtenerNombreCasoDeUso</b><br>Test class: TestCasosDeUso.CargarCDRsTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.CargarCDRsTest@1f966492</td></tr>
+<tr>
+<td title='TestCasosDeUso.CargarUsuariosTest.test_ObtenerNombreCasoDeUso()'><b>test_ObtenerNombreCasoDeUso</b><br>Test class: TestCasosDeUso.CargarUsuariosTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.CargarUsuariosTest@63fdffcd</td></tr>
+<tr>
+<td title='TestCasosDeUso.MostrarCDRsTest.test_ObtenerNombreCasoDeUso()'><b>test_ObtenerNombreCasoDeUso</b><br>Test class: TestCasosDeUso.MostrarCDRsTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.MostrarCDRsTest@7428de63</td></tr>
+<tr>
+<td title='TestCasosDeUso.MostrarUsuariosTest.test_ObtenerNombreCasoDeUso()'><b>test_ObtenerNombreCasoDeUso</b><br>Test class: TestCasosDeUso.MostrarUsuariosTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.MostrarUsuariosTest@66f659e6</td></tr>
+<tr>
+<td title='TestCasosDeUso.TarifarCDRsTest.test_ObtenerNombreCasoDeUso()'><b>test_ObtenerNombreCasoDeUso</b><br>Test class: TestCasosDeUso.TarifarCDRsTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.TarifarCDRsTest@4a68135e</td></tr>
+<tr>
+<td title='TestCasosDeUso.MostrarCDRsTest.test_obtenerCDRs()'><b>test_obtenerCDRs</b><br>Test class: TestCasosDeUso.MostrarCDRsTest</td>
+<td></td>
+<td>0</td>
+<td>TestCasosDeUso.MostrarCDRsTest@7428de63</td></tr>
+</table><p>
+</body>
+</html>

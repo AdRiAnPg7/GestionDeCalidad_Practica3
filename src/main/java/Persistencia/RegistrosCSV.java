@@ -38,7 +38,7 @@ public class RegistrosCSV implements IRepositorio {
 	
 	public void leerCDRs() {
 		
-		Path filePath = Paths.get("C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\CDRs.txt");
+		Path filePath = Paths.get("C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\CDRs.csv");
 		
 		try(
 				BufferedReader br = Files.newBufferedReader(filePath);
@@ -71,7 +71,7 @@ public class RegistrosCSV implements IRepositorio {
 	
 	
 	public void cargarPlanATelefonos() {
-		Path filePath = Paths.get("C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonos.txt");
+		Path filePath = Paths.get("C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonos.csv");
 
 		try(
 				BufferedReader br = Files.newBufferedReader(filePath);) 
@@ -174,7 +174,7 @@ public class RegistrosCSV implements IRepositorio {
 	
 	public void guardarCDRsCalculados(String fecha) {
 		
-        File file = new File("C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\"+fecha+".txt");
+        File file = new File("C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\"+fecha+".csv");
         try(
         		FileWriter fw = new FileWriter(file);
         		BufferedWriter bw = new BufferedWriter(fw);

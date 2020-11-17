@@ -3,21 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.TestCalculateCost">
+      <class name="TestCasosDeUso.TarifarCDRsTest">
         <methods>
-          <include name="obtenerNombreAdrian"/>
-          <include name="obtenerTodosLosDatos2"/>
-          <include name="obtenerNombreGamal"/>
-          <include name="obtenerPlanPrePago"/>
-          <include name="obtenerTodosLosDatos"/>
-          <include name="obtenerNombreAndres"/>
-          <include name="obtenerTodosLosDatos3"/>
-          <include name="obtenerNumeroTelefonico"/>
-          <include name="obtenerPlanWow"/>
-          <include name="setData"/>
-          <include name="obtenerPlanPostPago"/>
+          <include name="test_ObtenerNombreCasoDeUso"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- TestNG.TestCalculateCost -->
+      </class> <!-- TestCasosDeUso.TarifarCDRsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

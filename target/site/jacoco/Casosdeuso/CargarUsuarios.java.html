@@ -8,18 +8,18 @@ public class CargarUsuarios implements ICargarUsuarios{
 	public IRepositorio repositorio;
 	String nombre;
 	
-<span class="nc" id="L11">	public CargarUsuarios( IRepositorio repositorio) {</span>
-<span class="nc" id="L12">		this.repositorio = repositorio;</span>
-<span class="nc" id="L13">		this.nombre=&quot;CasoDeUsoCargarUsuarios&quot;;</span>
-<span class="nc" id="L14">	}</span>
+<span class="fc" id="L11">	public CargarUsuarios( IRepositorio repositorio) {</span>
+<span class="fc" id="L12">		this.repositorio = repositorio;</span>
+<span class="fc" id="L13">		this.nombre=&quot;CasoDeUsoCargarUsuarios&quot;;</span>
+<span class="fc" id="L14">	}</span>
 	
 	@Override
 	public void cargarUsuarios() {
-<span class="nc" id="L18">		repositorio.cargarPlanATelefonos();</span>
-<span class="nc" id="L19">	}</span>
+<span class="fc" id="L18">		repositorio.cargarPlanATelefonos();</span>
+<span class="fc" id="L19">	}</span>
 	
 	public String obtenerCasoDeUso() {
-<span class="nc" id="L22">		return nombre;</span>
+<span class="fc" id="L22">		return nombre;</span>
 	}
 
 	

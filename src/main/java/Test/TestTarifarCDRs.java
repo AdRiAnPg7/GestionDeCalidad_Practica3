@@ -12,7 +12,7 @@ class TestTarifarCDRs {
 	@Test
 	void obtenerCasoDeUso() {
 		TarifarCDRs cargarUsuarios= new TarifarCDRs(new RegistrosSQL());
-		assertEquals("CasoDeUSoTarifarCDRs", cargarUsuarios.obtenerCasoDeUso());
+		assertEquals("CasoDeUsoTarifarCDRs", cargarUsuarios.obtenerCasoDeUso());
 	}
 
 }
