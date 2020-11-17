@@ -1,8 +1,7 @@
 package TestNG;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.testng.annotations.*;
+import static org.testng.Assert.assertEquals;
+import org.testng.annotations.Test;
 
 import Planes.IPlan;
 import Planes.PlanPostPago;
@@ -10,9 +9,10 @@ import Planes.PlanPostPago;
 public class PlanPostPagoTest {
 	
 	@Test
-	public void test() {
+	public void esPostPago() {
 		IPlan planPostPago = new PlanPostPago();
-		assertEquals("PlanPostPago", planPostPago.obtenerNombre());
+		assertEquals(planPostPago.obtenerNombre(), "PlanPostPago");
 	}
+	
 
 }
