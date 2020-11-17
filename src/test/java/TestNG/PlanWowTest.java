@@ -1,8 +1,7 @@
 package TestNG;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.testng.annotations.*;
+import static org.testng.Assert.assertEquals;
+import org.testng.annotations.Test;
 
 import Planes.IPlan;
 import Planes.PlanWow;

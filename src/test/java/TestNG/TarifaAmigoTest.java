@@ -1,12 +1,8 @@
 package TestNG;
 
 import static org.testng.Assert.assertEquals;
-
 import java.time.LocalTime;
-
 import org.testng.annotations.Test;
-
-import org.testng.annotations.*;
 import Entidades.CDR;
 import Entidades.LineaTelefonica;
 import Entidades.Llamada;
@@ -44,12 +40,7 @@ public class TarifaAmigoTest {
 	LineaTelefonica telefonoAmigo2 = new LineaTelefonica(numeroAmigo2,null);	
 	LineaTelefonica telefonoAmigo3 = new LineaTelefonica(numeroAmigo3,null);	
 	LineaTelefonica telefonoAmigo4 = new LineaTelefonica(numeroAmigo4,null);	
-	
-	@BeforeSuite
-    public void suiteSetup1() {
-        System.out.println("testClass1.suiteSetup1: before suite");
-    }
-	
+		
 
 	@Test
 	void calcularTarifaAmigo() {
@@ -62,12 +53,7 @@ public class TarifaAmigoTest {
 		telefonoOrigen.aniadirPlan(planPrePago);
 		llamada.aniadirCDR(CDR);
 		
-		assertEquals( 0.00f, llamada.calcularCosto());
-		
-		telefonoOrigen.aniadirPlan(null);
-		CDR = null;
-		llamada.aniadirCDR(null);
-		
+		assertEquals(llamada.calcularCosto(), 0.00f);
 	}
 	
 	@Test
@@ -81,7 +67,7 @@ public class TarifaAmigoTest {
 		telefonoOrigen.aniadirPlan(	planPostPago);
 		llamada.aniadirCDR(CDR);
 		
-		assertEquals( 0.00f, llamada.calcularCosto());
+		assertEquals(llamada.calcularCosto(), 0.00f);
 	}
 	
 	@Test
@@ -95,7 +81,7 @@ public class TarifaAmigoTest {
 		telefonoOrigen.aniadirPlan(	planWow);
 		llamada.aniadirCDR(CDR);
 		
-		assertEquals( 0.00f, llamada.calcularCosto());
+		assertEquals(llamada.calcularCosto(), 0.00f);
 	}
 	
 	@Test
@@ -109,7 +95,7 @@ public class TarifaAmigoTest {
 		telefonoOrigen.aniadirPlan(planPrePago);
 		llamada.aniadirCDR(CDR);
 		
-		assertEquals( 0.99f, llamada.calcularCosto());
+		assertEquals(llamada.calcularCosto(), 0.99f);
 	}
 	
 	@Test
@@ -123,7 +109,7 @@ public class TarifaAmigoTest {
 		telefonoOrigen.aniadirPlan(	planPostPago);
 		llamada.aniadirCDR(CDR);
 		
-		assertEquals( 0.99f, llamada.calcularCosto());
+		assertEquals(llamada.calcularCosto(),  0.99f);
 	}
 	
 	@Test
@@ -137,7 +123,7 @@ public class TarifaAmigoTest {
 		telefonoOrigen.aniadirPlan(	planWow);
 		llamada.aniadirCDR(CDR);
 		
-		assertEquals( 0.99f, llamada.calcularCosto());
+		assertEquals(llamada.calcularCosto(), 0.99f);
 	}
 	
 	@Test
@@ -151,7 +137,7 @@ public class TarifaAmigoTest {
 		telefonoOrigen.aniadirPlan(planPrePago);
 		llamada.aniadirCDR(CDR);
 		
-		assertEquals( 1.98f, llamada.calcularCosto());
+		assertEquals(llamada.calcularCosto(), 1.98f);
 	}
 	
 	@Test
@@ -165,7 +151,7 @@ public class TarifaAmigoTest {
 		telefonoOrigen.aniadirPlan(	planPostPago);
 		llamada.aniadirCDR(CDR);
 		
-		assertEquals( 9.90f, llamada.calcularCosto());
+		assertEquals(llamada.calcularCosto(),  9.90f);
 	}
 	
 	@Test
@@ -179,7 +165,7 @@ public class TarifaAmigoTest {
 		telefonoOrigen.aniadirPlan(	planWow);
 		llamada.aniadirCDR(CDR);
 		
-		assertEquals( 1.15f, llamada.calcularCosto());
+		assertEquals(llamada.calcularCosto(), 1.15f);
 	}
 	
 	@Test
@@ -206,6 +192,6 @@ public class TarifaAmigoTest {
 		telefonoOrigen.aniadirPlan(	planWow);
 		llamada.aniadirCDR(CDR);
 	
-		assertEquals( 10.81f, llamada.calcularCosto());
+		assertEquals(llamada.calcularCosto(),  10.81f);
 	}
 }

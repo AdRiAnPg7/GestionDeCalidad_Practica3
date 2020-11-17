@@ -1,11 +1,8 @@
 package TestNG;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import java.time.LocalTime;
-
+import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
-
+import java.time.LocalTime;
 import Entidades.CDR;
 import Entidades.LineaTelefonica;
 import Entidades.Llamada;

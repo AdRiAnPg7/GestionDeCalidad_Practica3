@@ -1,9 +1,7 @@
 package TestNG;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
-
 import Entidades.LineaTelefonica;
 import Planes.IPlan;
 import Planes.PlanPostPago;
@@ -25,19 +23,19 @@ public class TelefonoTest {
 	@Test
 	void obtenerNumeroTelefonico() {
 		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,null);
-		assertEquals(numeroTelefono, telefono.obtenerNumero());
+		assertEquals(telefono.obtenerNumero(), numeroTelefono);
 	}
 	
 	@Test
 	void obtenerPlanPrePago() {
 		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPrePago);
-		assertEquals("PlanPrePago", telefono.obtenerPlan().obtenerNombre());
+		assertEquals(telefono.obtenerPlan().obtenerNombre(), "PlanPrePago");
 	}
 	
 	@Test
 	void obtenerPlanPostPago() {
 		LineaTelefonica telefono = new LineaTelefonica(numeroTelefono,planPostPago);
-		assertEquals("PlanPostPago", telefono.obtenerPlan().obtenerNombre());
+		assertEquals(telefono.obtenerPlan().obtenerNombre(), "PlanPostPago");
 	}
 	
 	@Test

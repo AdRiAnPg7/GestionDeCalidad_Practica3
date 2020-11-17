@@ -1,6 +1,6 @@
 package TestNG;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.testng.Assert.assertEquals;
 
 import java.util.ArrayList;
 
@@ -13,7 +13,7 @@ public class MostrarCDRsTest {
 	@Test
 	void obtenerCasoDeUso() {
 		MostrarCDRs cargarUsuarios= new MostrarCDRs(new ArrayList<CDR>());
-		assertEquals("CasoDeUsoMostrarCDRs", cargarUsuarios.obtenerCasoDeUso());
+		assertEquals(cargarUsuarios.obtenerCasoDeUso(), "CasoDeUsoMostrarCDRs");
 	}
 
 }
