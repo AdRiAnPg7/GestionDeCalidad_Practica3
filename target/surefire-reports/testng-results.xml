@@ -2,468 +2,468 @@
 <testng-results ignored="0" total="93" passed="93" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-17T15:55:30 VET" name="Command line suite" finished-at="2020-11-17T15:55:31 VET" duration-ms="647">
+  <suite started-at="2020-11-17T15:58:03 VET" name="Command line suite" finished-at="2020-11-17T15:58:04 VET" duration-ms="649">
     <groups>
     </groups>
-    <test started-at="2020-11-17T15:55:30 VET" name="Command line test" finished-at="2020-11-17T15:55:31 VET" duration-ms="647">
+    <test started-at="2020-11-17T15:58:03 VET" name="Command line test" finished-at="2020-11-17T15:58:04 VET" duration-ms="649">
       <class name="TestCasosDeUso.TarifarCDRsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.TarifarCDRsTest@1431267b]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.TarifarCDRsTest@1431267b]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_CalcularCosto()[pri:0, instance:TestCasosDeUso.TarifarCDRsTest@1431267b]" started-at="2020-11-17T15:55:30 VET" name="test_CalcularCosto" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularCosto()[pri:0, instance:TestCasosDeUso.TarifarCDRsTest@1431267b]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularCosto" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularCosto -->
-        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.TarifarCDRsTest@1431267b]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.TarifarCDRsTest@1431267b]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerNombreCasoDeUso -->
       </class> <!-- TestCasosDeUso.TarifarCDRsTest -->
       <class name="TestPlanes.PlanPrePagoTest">
-        <test-method signature="test_ObtenerPlanPrePago()[pri:0, instance:TestPlanes.PlanPrePagoTest@44841b43]" started-at="2020-11-17T15:55:31 VET" name="test_ObtenerPlanPrePago" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerPlanPrePago()[pri:0, instance:TestPlanes.PlanPrePagoTest@44841b43]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerPlanPrePago" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerPlanPrePago -->
       </class> <!-- TestPlanes.PlanPrePagoTest -->
       <class name="TestPlanes.PlanPostPagoTest">
-        <test-method signature="test_ObtenerPlanPostPago()[pri:0, instance:TestPlanes.PlanPostPagoTest@62628e78]" started-at="2020-11-17T15:55:31 VET" name="test_ObtenerPlanPostPago" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerPlanPostPago()[pri:0, instance:TestPlanes.PlanPostPagoTest@62628e78]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerPlanPostPago" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerPlanPostPago -->
       </class> <!-- TestPlanes.PlanPostPagoTest -->
       <class name="TestEntidades.LineaTelefonicaTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_AniadirNumeroTelefonico()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:55:30 VET" name="test_AniadirNumeroTelefonico" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_AniadirNumeroTelefonico()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:58:04 VET" name="test_AniadirNumeroTelefonico" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AniadirNumeroTelefonico -->
-        <test-method signature="test_ObtenerNombreVacio()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNombreVacio" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ObtenerNombreVacio -->
-        <test-method signature="test_ObtenerNumeroTelefonico()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNumeroTelefonico" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ObtenerNumeroTelefonico -->
-        <test-method signature="test_AniadirNombre()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:55:30 VET" name="test_AniadirNombre" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_AniadirNombre()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:58:04 VET" name="test_AniadirNombre" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AniadirNombre -->
-        <test-method signature="test_ObtenerPlan()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerPlan" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerPlan()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerPlan" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerPlan -->
+        <test-method signature="test_ObtenerNombreVacio()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNombreVacio" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerNombreVacio -->
+        <test-method signature="test_ObtenerNumeroTelefonico()[pri:0, instance:TestEntidades.LineaTelefonicaTest@c808207]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNumeroTelefonico" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerNumeroTelefonico -->
       </class> <!-- TestEntidades.LineaTelefonicaTest -->
       <class name="TestPersistencia.RegistrosSQLTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_ConnectToCDRsDB()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_ConnectToCDRsDB" finished-at="2020-11-17T15:55:30 VET" duration-ms="131" status="PASS">
+        <test-method signature="test_ConnectToCDRsDB()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_ConnectToCDRsDB" finished-at="2020-11-17T15:58:04 VET" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ConnectToCDRsDB -->
-        <test-method signature="test_ConnectToTelefonossDB()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_ConnectToTelefonossDB" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method signature="test_ConnectToTelefonossDB()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_ConnectToTelefonossDB" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ConnectToTelefonossDB -->
-        <test-method signature="test_DisconnectFromDB()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_DisconnectFromDB" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_DisconnectFromDB()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_DisconnectFromDB" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_DisconnectFromDB -->
-        <test-method signature="test_ErrorConnectToTelefonossDB()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_ErrorConnectToTelefonossDB" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method signature="test_ErrorConnectToTelefonossDB()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_ErrorConnectToTelefonossDB" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ErrorConnectToTelefonossDB -->
-        <test-method signature="test_LeerCDRs()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_LeerCDRs" finished-at="2020-11-17T15:55:30 VET" duration-ms="10" status="PASS">
+        <test-method signature="test_LeerCDRs()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_LeerCDRs" finished-at="2020-11-17T15:58:04 VET" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_LeerCDRs -->
-        <test-method signature="test_CantidadCDRs()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_CantidadCDRs" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_CantidadCDRs -->
-        <test-method signature="test_CantidadUsuarios()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_CantidadUsuarios" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="0" status="PASS">
+        <test-method signature="test_CantidadUsuarios()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_CantidadUsuarios" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CantidadUsuarios -->
-        <test-method signature="test_CargarPlanATelefonos()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_CargarPlanATelefonos" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="6" status="PASS">
+        <test-method signature="test_CantidadCDRs()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_CantidadCDRs" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CantidadCDRs -->
+        <test-method signature="test_CargarPlanATelefonos()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_CargarPlanATelefonos" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CargarPlanATelefonos -->
-        <test-method signature="test_MostrarCDRs()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_MostrarCDRs" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="1" status="PASS">
+        <test-method signature="test_MostrarCDRs()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_MostrarCDRs" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_MostrarCDRs -->
-        <test-method signature="test_ObtenerCDRs()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerCDRs" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerCDRs()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerCDRs" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerCDRs -->
-        <test-method signature="test_ObtenerUsuarios()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerUsuarios" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerUsuarios()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerUsuarios" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerUsuarios -->
-        <test-method signature="test_GuardarCDRsCalculados()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:55:30 VET" name="test_GuardarCDRsCalculados" finished-at="2020-11-17T15:55:31 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_CargarPlanATelefonos, TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="253" status="PASS">
+        <test-method signature="test_GuardarCDRsCalculados()[pri:0, instance:TestPersistencia.RegistrosSQLTest@67110f71]" started-at="2020-11-17T15:58:04 VET" name="test_GuardarCDRsCalculados" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosSQLTest.test_CargarPlanATelefonos, TestPersistencia.RegistrosSQLTest.test_LeerCDRs" duration-ms="240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_GuardarCDRsCalculados -->
       </class> <!-- TestPersistencia.RegistrosSQLTest -->
       <class name="TestEntidades.LlamadaTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_ObtenerNombreAdrian()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNombreAdrian" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerNombreAdrian()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNombreAdrian" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerNombreAdrian -->
-        <test-method signature="test_ObtenerNombreAndres()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNombreAndres" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ObtenerNombreAndres -->
-        <test-method signature="test_ObtenerPlanPostPago()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerPlanPostPago" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ObtenerPlanPostPago -->
-        <test-method signature="test_ObtenerPlanPrePago()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerPlanPrePago" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ObtenerPlanPrePago -->
-        <test-method signature="test_ObtenerNombreGamal()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNombreGamal" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerNombreGamal()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNombreGamal" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerNombreGamal -->
-        <test-method signature="test_ObtenerNumeroTelefonico()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNumeroTelefonico" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerNumeroTelefonico()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNumeroTelefonico" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerNumeroTelefonico -->
-        <test-method signature="test_ObtenerPlanWow()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerPlanWow" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerNombreAndres()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNombreAndres" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerNombreAndres -->
+        <test-method signature="test_ObtenerPlanPostPago()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerPlanPostPago" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerPlanPostPago -->
+        <test-method signature="test_ObtenerPlanWow()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerPlanWow" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerPlanWow -->
-        <test-method signature="test_ObtenerTodosLosDatos3()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerTodosLosDatos3" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerPlanPrePago()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerPlanPrePago" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerPlanPrePago -->
+        <test-method signature="test_ObtenerTodosLosDatos3()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerTodosLosDatos3" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerTodosLosDatos3 -->
-        <test-method signature="test_ObtenerTodosLosDatos2()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerTodosLosDatos2" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerTodosLosDatos2()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerTodosLosDatos2" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerTodosLosDatos2 -->
-        <test-method signature="test_ObtenerTodosLosDatos()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerTodosLosDatos" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerTodosLosDatos()[pri:0, instance:TestEntidades.LlamadaTest@77134e08]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerTodosLosDatos" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerTodosLosDatos -->
       </class> <!-- TestEntidades.LlamadaTest -->
       <class name="TestTarifas.TarifaAmigoTest">
-        <test-method signature="test_CalcularTarifaAmigo()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaAmigo()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaAmigo -->
-        <test-method signature="test_CalcularTarifaAmigo2()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo2" finished-at="2020-11-17T15:55:31 VET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_CalcularTarifaAmigo2 -->
-        <test-method signature="test_CalcularTarifaAmigo10()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo10" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaAmigo10()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo10" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaAmigo10 -->
-        <test-method signature="test_CalcularTarifaAmigo11()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo11" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaAmigo11()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo11" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaAmigo11 -->
-        <test-method signature="test_CalcularTarifaAmigo4()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo4" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaAmigo2()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo2" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_CalcularTarifaAmigo4 -->
-        <test-method signature="test_CalcularTarifaAmigo3()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo3" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        </test-method> <!-- test_CalcularTarifaAmigo2 -->
+        <test-method signature="test_CalcularTarifaAmigo3()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo3" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaAmigo3 -->
-        <test-method signature="test_CalcularTarifaAmigo5()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo5" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaAmigo4()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo4" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_CalcularTarifaAmigo5 -->
-        <test-method signature="test_CalcularTarifaAmigo4Amigos()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo4Amigos" description="Añadiremos 4 Amigos" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        </test-method> <!-- test_CalcularTarifaAmigo4 -->
+        <test-method signature="test_CalcularTarifaAmigo4Amigos()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo4Amigos" description="Añadiremos 4 Amigos" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaAmigo4Amigos -->
-        <test-method signature="test_CalcularTarifaAmigo5Amigos()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo5Amigos" description="Añadiremos 5 Amigos" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaAmigo5()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo5" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CalcularTarifaAmigo5 -->
+        <test-method signature="test_CalcularTarifaAmigo5Amigos()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo5Amigos" description="Añadiremos 5 Amigos" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaAmigo5Amigos -->
-        <test-method signature="test_CalcularTarifaAmigo6()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo6" finished-at="2020-11-17T15:55:31 VET" duration-ms="1" status="PASS">
+        <test-method signature="test_CalcularTarifaAmigo6()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo6" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaAmigo6 -->
-        <test-method signature="test_CalcularTarifaAmigo7()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo7" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaAmigo7()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo7" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaAmigo7 -->
-        <test-method signature="test_CalcularTarifaAmigo9()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo9" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaAmigo9()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo9" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaAmigo9 -->
-        <test-method signature="test_CalcularTarifaAmigo8()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaAmigo8" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaAmigo8()[pri:0, instance:TestTarifas.TarifaAmigoTest@4ab550d5]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaAmigo8" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaAmigo8 -->
       </class> <!-- TestTarifas.TarifaAmigoTest -->
       <class name="TestCasosDeUso.MostrarCDRsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.MostrarCDRsTest@12b5454f]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.MostrarCDRsTest@12b5454f]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.MostrarCDRsTest@12b5454f]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.MostrarCDRsTest@12b5454f]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerNombreCasoDeUso -->
-        <test-method signature="test_obtenerCDRs()[pri:0, instance:TestCasosDeUso.MostrarCDRsTest@12b5454f]" started-at="2020-11-17T15:55:30 VET" name="test_obtenerCDRs" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method signature="test_obtenerCDRs()[pri:0, instance:TestCasosDeUso.MostrarCDRsTest@12b5454f]" started-at="2020-11-17T15:58:04 VET" name="test_obtenerCDRs" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_obtenerCDRs -->
       </class> <!-- TestCasosDeUso.MostrarCDRsTest -->
       <class name="TestCasosDeUso.CalcularCDRsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.CalcularCDRsTest@7f572c37]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.CalcularCDRsTest@7f572c37]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_CalcularCostos()[pri:0, instance:TestCasosDeUso.CalcularCDRsTest@7f572c37]" started-at="2020-11-17T15:55:30 VET" name="test_CalcularCostos" finished-at="2020-11-17T15:55:30 VET" duration-ms="2" status="PASS">
+        <test-method signature="test_CalcularCostos()[pri:0, instance:TestCasosDeUso.CalcularCDRsTest@7f572c37]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularCostos" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularCostos -->
-        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.CalcularCDRsTest@7f572c37]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:55:30 VET" duration-ms="6" status="PASS">
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.CalcularCDRsTest@7f572c37]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:58:04 VET" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerNombreCasoDeUso -->
       </class> <!-- TestCasosDeUso.CalcularCDRsTest -->
       <class name="TestTarifas.TarifaNormalTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestTarifas.TarifaNormalTest@20749d9]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestTarifas.TarifaNormalTest@20749d9]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_CalcularTarifaHorarioNormal()[pri:0, instance:TestTarifas.TarifaNormalTest@20749d9]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaHorarioNormal" finished-at="2020-11-17T15:55:31 VET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_CalcularTarifaHorarioNormal -->
-        <test-method signature="test_CalcularTarifaHorarioNormal2()[pri:0, instance:TestTarifas.TarifaNormalTest@20749d9]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaHorarioNormal2" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaHorarioNormal2()[pri:0, instance:TestTarifas.TarifaNormalTest@20749d9]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaHorarioNormal2" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaHorarioNormal2 -->
-        <test-method signature="test_CalcularTarifaHorarioNormal3()[pri:0, instance:TestTarifas.TarifaNormalTest@20749d9]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaHorarioNormal3" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaHorarioNormal()[pri:0, instance:TestTarifas.TarifaNormalTest@20749d9]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaHorarioNormal" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CalcularTarifaHorarioNormal -->
+        <test-method signature="test_CalcularTarifaHorarioNormal3()[pri:0, instance:TestTarifas.TarifaNormalTest@20749d9]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaHorarioNormal3" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaHorarioNormal3 -->
-        <test-method signature="test_CalcularTarifaHorarioNormal4()[pri:0, instance:TestTarifas.TarifaNormalTest@20749d9]" started-at="2020-11-17T15:55:31 VET" name="test_CalcularTarifaHorarioNormal4" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CalcularTarifaHorarioNormal4()[pri:0, instance:TestTarifas.TarifaNormalTest@20749d9]" started-at="2020-11-17T15:58:04 VET" name="test_CalcularTarifaHorarioNormal4" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CalcularTarifaHorarioNormal4 -->
       </class> <!-- TestTarifas.TarifaNormalTest -->
       <class name="TestPlanes.PlanWowTest">
-        <test-method signature="test_ObtenerPlanPlanWow()[pri:0, instance:TestPlanes.PlanWowTest@7c75db8b]" started-at="2020-11-17T15:55:31 VET" name="test_ObtenerPlanPlanWow" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerPlanPlanWow()[pri:0, instance:TestPlanes.PlanWowTest@7c75db8b]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerPlanPlanWow" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerPlanPlanWow -->
       </class> <!-- TestPlanes.PlanWowTest -->
       <class name="TestCasosDeUso.CargarUsuariosTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.CargarUsuariosTest@3f93e4a8]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.CargarUsuariosTest@3f93e4a8]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_CargarUsuarios()[pri:0, instance:TestCasosDeUso.CargarUsuariosTest@3f93e4a8]" started-at="2020-11-17T15:55:30 VET" name="test_CargarUsuarios" finished-at="2020-11-17T15:55:30 VET" duration-ms="2" status="PASS">
+        <test-method signature="test_CargarUsuarios()[pri:0, instance:TestCasosDeUso.CargarUsuariosTest@3f93e4a8]" started-at="2020-11-17T15:58:04 VET" name="test_CargarUsuarios" finished-at="2020-11-17T15:58:04 VET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CargarUsuarios -->
-        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.CargarUsuariosTest@3f93e4a8]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.CargarUsuariosTest@3f93e4a8]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerNombreCasoDeUso -->
       </class> <!-- TestCasosDeUso.CargarUsuariosTest -->
       <class name="TestCasosDeUso.MostrarUsuariosTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.MostrarUsuariosTest@5445f5ba]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.MostrarUsuariosTest@5445f5ba]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.MostrarUsuariosTest@5445f5ba]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.MostrarUsuariosTest@5445f5ba]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerNombreCasoDeUso -->
-        <test-method signature="test_CargarUsuarios()[pri:0, instance:TestCasosDeUso.MostrarUsuariosTest@5445f5ba]" started-at="2020-11-17T15:55:30 VET" name="test_CargarUsuarios" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_CargarUsuarios()[pri:0, instance:TestCasosDeUso.MostrarUsuariosTest@5445f5ba]" started-at="2020-11-17T15:58:04 VET" name="test_CargarUsuarios" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CargarUsuarios -->
       </class> <!-- TestCasosDeUso.MostrarUsuariosTest -->
       <class name="TestCasosDeUso.CargarCDRsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.CargarCDRsTest@2add4d24]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCasosDeUso.CargarCDRsTest@2add4d24]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_CargarCDRs()[pri:0, instance:TestCasosDeUso.CargarCDRsTest@2add4d24]" started-at="2020-11-17T15:55:30 VET" name="test_CargarCDRs" finished-at="2020-11-17T15:55:30 VET" duration-ms="2" status="PASS">
+        <test-method signature="test_CargarCDRs()[pri:0, instance:TestCasosDeUso.CargarCDRsTest@2add4d24]" started-at="2020-11-17T15:58:04 VET" name="test_CargarCDRs" finished-at="2020-11-17T15:58:04 VET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CargarCDRs -->
-        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.CargarCDRsTest@2add4d24]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerNombreCasoDeUso()[pri:0, instance:TestCasosDeUso.CargarCDRsTest@2add4d24]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerNombreCasoDeUso" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerNombreCasoDeUso -->
       </class> <!-- TestCasosDeUso.CargarCDRsTest -->
       <class name="TestEntidades.CDRTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="90" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:58:03 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_AniadirFecha()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:55:30 VET" name="test_AniadirFecha" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_AniadirFecha -->
-        <test-method signature="test_AniadirDuracionLlamada()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:55:30 VET" name="test_AniadirDuracionLlamada" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_AniadirDuracionLlamada()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:58:04 VET" name="test_AniadirDuracionLlamada" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AniadirDuracionLlamada -->
-        <test-method signature="test_AniadirTelefonoOrigen()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:55:30 VET" name="test_AniadirTelefonoOrigen" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_AniadirTelefonoOrigen -->
-        <test-method signature="test_AniadirHoraInicioLlamada()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:55:30 VET" name="test_AniadirHoraInicioLlamada" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_AniadirHoraInicioLlamada()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:58:04 VET" name="test_AniadirHoraInicioLlamada" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AniadirHoraInicioLlamada -->
-        <test-method signature="test_AniadirTelefonoDestino()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:55:30 VET" name="test_AniadirTelefonoDestino" finished-at="2020-11-17T15:55:30 VET" duration-ms="0" status="PASS">
+        <test-method signature="test_AniadirFecha()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:58:04 VET" name="test_AniadirFecha" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_AniadirFecha -->
+        <test-method signature="test_AniadirTelefonoDestino()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:58:04 VET" name="test_AniadirTelefonoDestino" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_AniadirTelefonoDestino -->
+        <test-method signature="test_AniadirTelefonoOrigen()[pri:0, instance:TestEntidades.CDRTest@342726f1]" started-at="2020-11-17T15:58:04 VET" name="test_AniadirTelefonoOrigen" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_AniadirTelefonoOrigen -->
       </class> <!-- TestEntidades.CDRTest -->
       <class name="TestTarifas.TarifaHorariosTest">
-        <test-method signature="calcularTarifaHorarioReducido()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioReducido" finished-at="2020-11-17T15:55:31 VET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- calcularTarifaHorarioReducido -->
-        <test-method signature="calcularTarifaHorarioReducido3()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioReducido3" finished-at="2020-11-17T15:55:31 VET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- calcularTarifaHorarioReducido3 -->
-        <test-method signature="calcularTarifaHorarioReducido2()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioReducido2" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="calcularTarifaHorarioReducido2()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioReducido2" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcularTarifaHorarioReducido2 -->
-        <test-method signature="calcularTarifaHorarioReducido6()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioReducido6" finished-at="2020-11-17T15:55:31 VET" duration-ms="1" status="PASS">
+        <test-method signature="calcularTarifaHorarioReducido()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioReducido" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- calcularTarifaHorarioReducido6 -->
-        <test-method signature="calcularTarifaHorarioReducido5()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioReducido5" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        </test-method> <!-- calcularTarifaHorarioReducido -->
+        <test-method signature="calcularTarifaHorarioReducido3()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioReducido3" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- calcularTarifaHorarioReducido5 -->
-        <test-method signature="calcularTarifaHorarioReducido4()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioReducido4" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        </test-method> <!-- calcularTarifaHorarioReducido3 -->
+        <test-method signature="calcularTarifaHorarioReducido4()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioReducido4" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcularTarifaHorarioReducido4 -->
-        <test-method signature="calcularTarifaHorarioSuperReducido()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioSuperReducido" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="calcularTarifaHorarioReducido5()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioReducido5" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calcularTarifaHorarioReducido5 -->
+        <test-method signature="calcularTarifaHorarioReducido6()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioReducido6" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calcularTarifaHorarioReducido6 -->
+        <test-method signature="calcularTarifaHorarioSuperReducido()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioSuperReducido" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcularTarifaHorarioSuperReducido -->
-        <test-method signature="calcularTarifaHorarioSuperReducido2()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioSuperReducido2" finished-at="2020-11-17T15:55:31 VET" duration-ms="1" status="PASS">
+        <test-method signature="calcularTarifaHorarioSuperReducido2()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioSuperReducido2" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcularTarifaHorarioSuperReducido2 -->
-        <test-method signature="calcularTarifaHorarioSuperReducido3()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioSuperReducido3" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="calcularTarifaHorarioSuperReducido3()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioSuperReducido3" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcularTarifaHorarioSuperReducido3 -->
-        <test-method signature="calcularTarifaHorarioSuperReducido4()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioSuperReducido4" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="calcularTarifaHorarioSuperReducido4()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioSuperReducido4" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcularTarifaHorarioSuperReducido4 -->
-        <test-method signature="calcularTarifaHorarioSuperReducido5()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioSuperReducido5" finished-at="2020-11-17T15:55:31 VET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- calcularTarifaHorarioSuperReducido5 -->
-        <test-method signature="calcularTarifaHorarioSuperReducido6()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaHorarioSuperReducido6" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="calcularTarifaHorarioSuperReducido6()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioSuperReducido6" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcularTarifaHorarioSuperReducido6 -->
-        <test-method signature="calcularTarifaNormal()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaNormal" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="calcularTarifaHorarioSuperReducido5()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaHorarioSuperReducido5" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- calcularTarifaNormal -->
-        <test-method signature="calcularTarifaNormal3()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaNormal3" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- calcularTarifaNormal3 -->
-        <test-method signature="calcularTarifaNormal4()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaNormal4" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- calcularTarifaNormal4 -->
-        <test-method signature="calcularTarifaNormal2()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaNormal2" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        </test-method> <!-- calcularTarifaHorarioSuperReducido5 -->
+        <test-method signature="calcularTarifaNormal2()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaNormal2" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcularTarifaNormal2 -->
-        <test-method signature="calcularTarifaNormal6()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaNormal6" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="calcularTarifaNormal()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaNormal" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calcularTarifaNormal -->
+        <test-method signature="calcularTarifaNormal3()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaNormal3" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calcularTarifaNormal3 -->
+        <test-method signature="calcularTarifaNormal4()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaNormal4" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calcularTarifaNormal4 -->
+        <test-method signature="calcularTarifaNormal6()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaNormal6" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcularTarifaNormal6 -->
-        <test-method signature="calcularTarifaNormal5()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:55:31 VET" name="calcularTarifaNormal5" finished-at="2020-11-17T15:55:31 VET" duration-ms="0" status="PASS">
+        <test-method signature="calcularTarifaNormal5()[pri:0, instance:TestTarifas.TarifaHorariosTest@3cd206b5]" started-at="2020-11-17T15:58:04 VET" name="calcularTarifaNormal5" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcularTarifaNormal5 -->
       </class> <!-- TestTarifas.TarifaHorariosTest -->
       <class name="TestMain.MainTest">
-        <test-method signature="test_Main()[pri:0, instance:TestMain.MainTest@de77232]" started-at="2020-11-17T15:55:30 VET" name="test_Main" finished-at="2020-11-17T15:55:30 VET" duration-ms="36" status="PASS">
+        <test-method signature="test_Main()[pri:0, instance:TestMain.MainTest@de77232]" started-at="2020-11-17T15:58:04 VET" name="test_Main" finished-at="2020-11-17T15:58:04 VET" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Main -->
       </class> <!-- TestMain.MainTest -->
       <class name="TestPresentacion.SparkTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestPresentacion.SparkTest@6f89292e]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestPresentacion.SparkTest@6f89292e]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testGet()[pri:0, instance:TestPresentacion.SparkTest@6f89292e]" started-at="2020-11-17T15:55:31 VET" name="testGet" finished-at="2020-11-17T15:55:31 VET" duration-ms="1" status="PASS">
+        <test-method signature="testGet()[pri:0, instance:TestPresentacion.SparkTest@6f89292e]" started-at="2020-11-17T15:58:04 VET" name="testGet" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGet -->
-        <test-method signature="test_IniciarPresentacion()[pri:0, instance:TestPresentacion.SparkTest@6f89292e]" started-at="2020-11-17T15:55:31 VET" name="test_IniciarPresentacion" finished-at="2020-11-17T15:55:31 VET" duration-ms="1" status="PASS">
+        <test-method signature="test_IniciarPresentacion()[pri:0, instance:TestPresentacion.SparkTest@6f89292e]" started-at="2020-11-17T15:58:04 VET" name="test_IniciarPresentacion" finished-at="2020-11-17T15:58:04 VET" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_IniciarPresentacion -->
       </class> <!-- TestPresentacion.SparkTest -->
       <class name="TestPersistencia.RegistrosCSVTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:55:30 VET" name="setup" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:58:04 VET" name="setup" finished-at="2020-11-17T15:58:04 VET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_LeerCDRs()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:55:30 VET" name="test_LeerCDRs" finished-at="2020-11-17T15:55:30 VET" duration-ms="1" status="PASS">
+        <test-method signature="test_LeerCDRs()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:58:04 VET" name="test_LeerCDRs" finished-at="2020-11-17T15:58:04 VET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_LeerCDRs -->
-        <test-method signature="test_CantidadCDRs()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:55:30 VET" name="test_CantidadCDRs" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="0" status="PASS">
+        <test-method signature="test_CantidadCDRs()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:58:04 VET" name="test_CantidadCDRs" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CantidadCDRs -->
-        <test-method signature="test_CargarPlanATelefonos()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:55:30 VET" name="test_CargarPlanATelefonos" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="2" status="PASS">
+        <test-method signature="test_CargarPlanATelefonos()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:58:04 VET" name="test_CargarPlanATelefonos" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CargarPlanATelefonos -->
-        <test-method signature="test_MostrarCDRs()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:55:30 VET" name="test_MostrarCDRs" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="1" status="PASS">
+        <test-method signature="test_MostrarCDRs()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:58:04 VET" name="test_MostrarCDRs" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_MostrarCDRs -->
-        <test-method signature="test_ObtenerCDRs()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerCDRs" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ObtenerCDRs -->
-        <test-method signature="test_ObtenerUsuarios()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:55:30 VET" name="test_ObtenerUsuarios" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="0" status="PASS">
+        <test-method signature="test_ObtenerUsuarios()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerUsuarios" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_ObtenerUsuarios -->
-        <test-method signature="test_GuardarCDRsCalculados()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:55:30 VET" name="test_GuardarCDRsCalculados" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_CargarPlanATelefonos, TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="2" status="PASS">
+        <test-method signature="test_ObtenerCDRs()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:58:04 VET" name="test_ObtenerCDRs" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ObtenerCDRs -->
+        <test-method signature="test_GuardarCDRsCalculados()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:58:04 VET" name="test_GuardarCDRsCalculados" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_CargarPlanATelefonos, TestPersistencia.RegistrosCSVTest.test_LeerCDRs" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_GuardarCDRsCalculados -->
-        <test-method signature="test_CantidadUsuarios()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:55:30 VET" name="test_CantidadUsuarios" finished-at="2020-11-17T15:55:30 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs, TestPersistencia.RegistrosCSVTest.test_GuardarCDRsCalculados" duration-ms="0" status="PASS">
+        <test-method signature="test_CantidadUsuarios()[pri:0, instance:TestPersistencia.RegistrosCSVTest@6a0cbc6f]" started-at="2020-11-17T15:58:04 VET" name="test_CantidadUsuarios" finished-at="2020-11-17T15:58:04 VET" depends-on-methods="TestPersistencia.RegistrosCSVTest.test_LeerCDRs, TestPersistencia.RegistrosCSVTest.test_GuardarCDRsCalculados" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CantidadUsuarios -->
