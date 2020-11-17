@@ -8,7 +8,7 @@ public class CalcularCDRs implements ICalcularCDRs {
 	
 	public CalcularCDRs( IRepositorio repositorio) {
 		this.repositorio = repositorio;
-		this.nombre="CasoDeUSoCalcularCDRs";
+		this.nombre="CasoDeUsoCalcularCDRs";
 	}
 
 	@Override

@@ -6,18 +6,18 @@ public class CalcularCDRs implements ICalcularCDRs {
 	private IRepositorio repositorio;
 	String nombre;
 	
-<span class="nc" id="L9">	public CalcularCDRs( IRepositorio repositorio) {</span>
-<span class="nc" id="L10">		this.repositorio = repositorio;</span>
-<span class="nc" id="L11">		this.nombre=&quot;CasoDeUSoCalcularCDRs&quot;;</span>
-<span class="nc" id="L12">	}</span>
+<span class="fc" id="L9">	public CalcularCDRs( IRepositorio repositorio) {</span>
+<span class="fc" id="L10">		this.repositorio = repositorio;</span>
+<span class="fc" id="L11">		this.nombre=&quot;CasoDeUsoCalcularCDRs&quot;;</span>
+<span class="fc" id="L12">	}</span>
 
 	@Override
 	public void calcularCosto(String fecha) {
-<span class="nc" id="L16">		repositorio.guardarCDRsCalculados(fecha);</span>
-<span class="nc" id="L17">	}</span>
+<span class="fc" id="L16">		repositorio.guardarCDRsCalculados(fecha);</span>
+<span class="fc" id="L17">	}</span>
 	
 	public String obtenerCasoDeUso() {
-<span class="nc" id="L20">		return nombre;</span>
+<span class="fc" id="L20">		return nombre;</span>
 	}
 	
 	
