@@ -90,7 +90,7 @@ public class RegistrosCSV implements IRepositorio {
 
 	private void asignarPlan(String[] datosDeLinea) {
 		
-		
+		logger.debug(datosDeLinea[2]);
 		if("PlanPrePago".equals(datosDeLinea[2]) ) {
 			for (CDR CDR: CDRs) {
 			    asignarPlanPrepago(datosDeLinea, CDR);

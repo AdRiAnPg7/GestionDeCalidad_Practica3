@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCasosDeUso.TarifarCDRsTest">
+      <class name="TestTarifas.TarifaNormalTest">
         <methods>
-          <include name="test_ObtenerNombreCasoDeUso"/>
+          <include name="calcularTarifaHorarioNormal5"/>
+          <include name="calcularTarifaHorarioNormal3"/>
+          <include name="calcularTarifaHorarioNormal2"/>
+          <include name="calcularTarifaHorarioNormal"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- TestCasosDeUso.TarifarCDRsTest -->
+      </class> <!-- TestTarifas.TarifaNormalTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 
+
 import Entidades.CDR;
 import Entidades.LineaTelefonica;
 import Planes.PlanPostPago;
@@ -19,8 +20,6 @@ import Planes.PlanWow;
 import Tarifas.TarifaNormal;
 import Tarifas.TarifaAmigo;
 import Tarifas.TarifaHorarios;
-
-
 
 public class RegistrosSQL implements IRepositorio {
 	
@@ -105,9 +104,9 @@ public class RegistrosSQL implements IRepositorio {
 
 	@Override
 	public void cargarPlanATelefonos() {
-		connect(TelefonosPath);
+		connect(CDRsPath);
 		
-		try (	PreparedStatement st = conexion.prepareStatement("select * from Telefonia");
+		try (	PreparedStatement st = conexion.prepareStatement("select * from cdr");
 				ResultSet result = st.executeQuery();
 				){
 			
@@ -124,7 +123,8 @@ public class RegistrosSQL implements IRepositorio {
 		
 	}
 
-	private void asignarPlan(ResultSet result) throws NumberFormatException, SQLException {
+	
+	public void asignarPlan(ResultSet result) throws NumberFormatException, SQLException {
 		
 		if("PlanPrePago".equals(result.getString("Plan")) ) {
 			asignarPlanPrePago(result);

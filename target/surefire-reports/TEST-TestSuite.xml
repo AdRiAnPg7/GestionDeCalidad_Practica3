@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="20" failures="0" name="TestSuite" time="0.399" errors="0" skipped="0">
+<testsuite tests="93" failures="0" name="TestSuite" time="0.48" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="13.0.2+8"/>
@@ -61,23 +61,96 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="TestCasosDeUso.CalcularCDRsTest" name="test_CalcularCostos" time="0.004"/>
-  <testcase classname="TestCasosDeUso.CalcularCDRsTest" name="test_ObtenerNombreCasoDeUso" time="0.004"/>
-  <testcase classname="TestCasosDeUso.CargarCDRsTest" name="test_CargarCDRs" time="0.002"/>
+  <testcase classname="TestCasosDeUso.CalcularCDRsTest" name="test_ObtenerNombreCasoDeUso" time="0.005"/>
+  <testcase classname="TestCasosDeUso.CargarCDRsTest" name="test_CargarCDRs" time="0.003"/>
   <testcase classname="TestCasosDeUso.CargarCDRsTest" name="test_ObtenerNombreCasoDeUso" time="0"/>
-  <testcase classname="TestCasosDeUso.CargarUsuariosTest" name="test_CargarUsuarios" time="0.001"/>
+  <testcase classname="TestCasosDeUso.CargarUsuariosTest" name="test_CargarUsuarios" time="0.004"/>
   <testcase classname="TestCasosDeUso.CargarUsuariosTest" name="test_ObtenerNombreCasoDeUso" time="0"/>
   <testcase classname="TestCasosDeUso.MostrarCDRsTest" name="test_ObtenerNombreCasoDeUso" time="0"/>
   <testcase classname="TestCasosDeUso.MostrarCDRsTest" name="test_obtenerCDRs" time="0"/>
   <testcase classname="TestCasosDeUso.MostrarUsuariosTest" name="test_CargarUsuarios" time="0"/>
-  <testcase classname="TestCasosDeUso.MostrarUsuariosTest" name="test_ObtenerNombreCasoDeUso" time="0.001"/>
-  <testcase classname="TestCasosDeUso.TarifarCDRsTest" name="test_CalcularCosto" time="0"/>
+  <testcase classname="TestCasosDeUso.MostrarUsuariosTest" name="test_ObtenerNombreCasoDeUso" time="0"/>
+  <testcase classname="TestCasosDeUso.TarifarCDRsTest" name="test_CalcularCosto" time="0.001"/>
   <testcase classname="TestCasosDeUso.TarifarCDRsTest" name="test_ObtenerNombreCasoDeUso" time="0"/>
-  <testcase classname="TestNG.TestCalculateCost" name="test" time="0"/>
-  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ConnectToTelefonossDB" time="0.105"/>
-  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ErroronnectToTelefonossDB" time="0.001"/>
-  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_LeerCDRs" time="0.013"/>
-  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ConnectToCDRsDB" time="0.001"/>
+  <testcase classname="TestEntidades.CDRTest" name="test_AniadirDuracionLlamada" time="0"/>
+  <testcase classname="TestEntidades.CDRTest" name="test_AniadirFecha" time="0"/>
+  <testcase classname="TestEntidades.CDRTest" name="test_AniadirHoraInicioLlamada" time="0"/>
+  <testcase classname="TestEntidades.CDRTest" name="test_AniadirTelefonoDestino" time="0"/>
+  <testcase classname="TestEntidades.CDRTest" name="test_AniadirTelefonoOrigen" time="0"/>
+  <testcase classname="TestEntidades.LineaTelefonicaTest" name="test_AniadirNombre" time="0"/>
+  <testcase classname="TestEntidades.LineaTelefonicaTest" name="test_AniadirNumeroTelefonico" time="0"/>
+  <testcase classname="TestEntidades.LineaTelefonicaTest" name="test_ObtenerNombreVacio" time="0"/>
+  <testcase classname="TestEntidades.LineaTelefonicaTest" name="test_ObtenerNumeroTelefonico" time="0.001"/>
+  <testcase classname="TestEntidades.LineaTelefonicaTest" name="test_ObtenerPlan" time="0"/>
+  <testcase classname="TestEntidades.LlamadaTest" name="test_ObtenerNombreAdrian" time="0"/>
+  <testcase classname="TestEntidades.LlamadaTest" name="test_ObtenerNombreAndres" time="0"/>
+  <testcase classname="TestEntidades.LlamadaTest" name="test_ObtenerNombreGamal" time="0"/>
+  <testcase classname="TestEntidades.LlamadaTest" name="test_ObtenerNumeroTelefonico" time="0"/>
+  <testcase classname="TestEntidades.LlamadaTest" name="test_ObtenerPlanPostPago" time="0"/>
+  <testcase classname="TestEntidades.LlamadaTest" name="test_ObtenerPlanPrePago" time="0"/>
+  <testcase classname="TestEntidades.LlamadaTest" name="test_ObtenerPlanWow" time="0"/>
+  <testcase classname="TestEntidades.LlamadaTest" name="test_ObtenerTodosLosDatos" time="0"/>
+  <testcase classname="TestEntidades.LlamadaTest" name="test_ObtenerTodosLosDatos2" time="0"/>
+  <testcase classname="TestEntidades.LlamadaTest" name="test_ObtenerTodosLosDatos3" time="0"/>
+  <testcase classname="TestMain.MainTest" name="test_Main" time="0.037"/>
+  <testcase classname="TestPersistencia.RegistrosCSVTest" name="test_LeerCDRs" time="0.001"/>
+  <testcase classname="TestPersistencia.RegistrosCSVTest" name="test_CantidadCDRs" time="0"/>
+  <testcase classname="TestPersistencia.RegistrosCSVTest" name="test_CargarPlanATelefonos" time="0.004"/>
+  <testcase classname="TestPersistencia.RegistrosCSVTest" name="test_MostrarCDRs" time="0.002"/>
+  <testcase classname="TestPersistencia.RegistrosCSVTest" name="test_ObtenerCDRs" time="0"/>
+  <testcase classname="TestPersistencia.RegistrosCSVTest" name="test_ObtenerUsuarios" time="0"/>
+  <testcase classname="TestPersistencia.RegistrosCSVTest" name="test_GuardarCDRsCalculados" time="0.001"/>
+  <testcase classname="TestPersistencia.RegistrosCSVTest" name="test_CantidadUsuarios" time="0.001"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ConnectToCDRsDB" time="0.14"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ConnectToTelefonossDB" time="0.002"/>
   <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_DisconnectFromDB" time="0"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ErrorConnectToTelefonossDB" time="0.001"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_LeerCDRs" time="0.018"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_CantidadCDRs" time="0"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_CantidadUsuarios" time="0"/>
   <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_CargarPlanATelefonos" time="0.004"/>
-  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_GuardarCDRsCalculados" time="0.263"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_MostrarCDRs" time="0.002"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ObtenerCDRs" time="0"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_ObtenerUsuarios" time="0"/>
+  <testcase classname="TestPersistencia.RegistrosSQLTest" name="test_GuardarCDRsCalculados" time="0.238"/>
+  <testcase classname="TestPlanes.PlanPostPagoTest" name="test_ObtenerPlanPostPago" time="0"/>
+  <testcase classname="TestPlanes.PlanPrePagoTest" name="test_ObtenerPlanPrePago" time="0"/>
+  <testcase classname="TestPlanes.PlanWowTest" name="test_ObtenerPlanPlanWow" time="0"/>
+  <testcase classname="TestPresentacion.SparkTest" name="testGet" time="0"/>
+  <testcase classname="TestPresentacion.SparkTest" name="test_IniciarPresentacion" time="0.007"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo10" time="0.002"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo11" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo2" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo3" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo4" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo4Amigos" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo5" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo5Amigos" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo6" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo7" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo8" time="0"/>
+  <testcase classname="TestTarifas.TarifaAmigoTest" name="test_CalcularTarifaAmigo9" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioReducido" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioReducido2" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioReducido3" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioReducido4" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioReducido5" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioReducido6" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioSuperReducido" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioSuperReducido2" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioSuperReducido3" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioSuperReducido4" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioSuperReducido5" time="0.001"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaHorarioSuperReducido6" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaNormal" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaNormal2" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaNormal3" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaNormal4" time="0.001"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaNormal5" time="0"/>
+  <testcase classname="TestTarifas.TarifaHorariosTest" name="calcularTarifaNormal6" time="0"/>
+  <testcase classname="TestTarifas.TarifaNormalTest" name="test_CalcularTarifaHorarioNormal" time="0"/>
+  <testcase classname="TestTarifas.TarifaNormalTest" name="test_CalcularTarifaHorarioNormal2" time="0"/>
+  <testcase classname="TestTarifas.TarifaNormalTest" name="test_CalcularTarifaHorarioNormal3" time="0"/>
+  <testcase classname="TestTarifas.TarifaNormalTest" name="test_CalcularTarifaHorarioNormal4" time="0"/>
 </testsuite>

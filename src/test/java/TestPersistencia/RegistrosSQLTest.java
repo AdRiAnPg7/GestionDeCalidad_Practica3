@@ -1,7 +1,10 @@
 package TestPersistencia;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import Persistencia.RegistrosSQL;
 
 public class RegistrosSQLTest {
@@ -11,7 +14,8 @@ public class RegistrosSQLTest {
 	String TelefonosPath;
 	String fecha;
 	String errorPath;
-	
+	int cantidadCDRs;
+	int cantidadUsuarios;
 	@BeforeTest 
 	public void setup() {
 		registrosSQL = new RegistrosSQL();
@@ -19,6 +23,8 @@ public class RegistrosSQLTest {
 		TelefonosPath = "C:\\Users\\Adrian\\eclipse-workspace\\ArquitecturaSoftware\\Persistencia\\Telefonos.db";
 		fecha = "01/01/2020";
 		errorPath = "XYZ";
+		cantidadCDRs = 3;
+		cantidadUsuarios = 3;
 	}
 	
 	@Test
@@ -32,9 +38,8 @@ public class RegistrosSQLTest {
 	}
 	
 	@Test
-	public void test_ErroronnectToTelefonossDB() {
+	public void test_ErrorConnectToTelefonossDB() {
 		registrosSQL.connect(errorPath);
-		registrosSQL.close();
 		registrosSQL.close();
 	}
 	@Test
@@ -57,6 +62,29 @@ public class RegistrosSQLTest {
 		registrosSQL.guardarCDRsCalculados(fecha);
 	}
 	
+	@Test (dependsOnMethods = {"test_LeerCDRs"})
+	public void test_MostrarCDRs() {
+		registrosSQL.mostrarCDRs();
+	}
 	
+	@Test (dependsOnMethods = {"test_LeerCDRs"})
+	public void test_CantidadCDRs() {
+		assertEquals(registrosSQL.cantidadCDRs(), cantidadCDRs);
+	}
+	
+	@Test (dependsOnMethods = {"test_LeerCDRs"})
+	public void test_CantidadUsuarios() {
+		assertEquals(registrosSQL.cantidadUsuarios(), cantidadUsuarios);
+	}
+
+	@Test (dependsOnMethods = {"test_LeerCDRs"})
+	public void test_ObtenerCDRs() {
+		registrosSQL.obtenerCDRs();
+	}
+	
+	@Test (dependsOnMethods = {"test_LeerCDRs"})
+	public void test_ObtenerUsuarios() {
+		registrosSQL.obtenerUsuarios();
+	}
 	
 }
