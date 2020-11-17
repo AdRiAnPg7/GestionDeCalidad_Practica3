@@ -6,4 +6,5 @@ import Entidades.CDR;
 
 public interface IMostrarCDRs {
 	ArrayList<CDR> obtenerCDRs();
+	String obtenerCasoDeUso();
 }

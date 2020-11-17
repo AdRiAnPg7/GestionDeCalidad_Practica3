@@ -15,6 +15,6 @@ class TestCalcularCosto {
 	@Test
 	void obtenerCasoDeUso() {
 		CalcularCDRs calcularCDRs= new CalcularCDRs(new RegistrosSQL());
-		assertEquals("CasoDeUSoCalcularCDRs", calcularCDRs.obtenerCasoDeUso());
+		assertEquals("CasoDeUsoCalcularCDRs", calcularCDRs.obtenerCasoDeUso());
 	}
 }

@@ -12,31 +12,31 @@ public class CDR {
 	public LocalTime tiempoDuracionLlamada;
 	
 	float costo;
-<span class="nc" id="L15">	Logger logger = Logger.getLogger(Class.class);</span>
+<span class="fc" id="L15">	Logger logger = Logger.getLogger(Class.class);</span>
 	
-<span class="nc" id="L17">	public CDR (LineaTelefonica telefonoOrigen, </span>
+<span class="fc" id="L17">	public CDR (LineaTelefonica telefonoOrigen, </span>
 				LineaTelefonica telefonoDestino, 
 				LocalTime horaInicioLlamada, 
 				LocalTime tiempoDuracionLlamada, 
 				String fecha) {
-<span class="nc" id="L22">		this.telefonoOrigen = telefonoOrigen;</span>
-<span class="nc" id="L23">		this.telefonoDestino = telefonoDestino;</span>
-<span class="nc" id="L24">		this.horaInicioLlamada = horaInicioLlamada;</span>
-<span class="nc" id="L25">		this.tiempoDuracionLlamada = tiempoDuracionLlamada;</span>
-<span class="nc" id="L26">		this.fecha = fecha;</span>
-<span class="nc" id="L27">	}</span>
+<span class="fc" id="L22">		this.telefonoOrigen = telefonoOrigen;</span>
+<span class="fc" id="L23">		this.telefonoDestino = telefonoDestino;</span>
+<span class="fc" id="L24">		this.horaInicioLlamada = horaInicioLlamada;</span>
+<span class="fc" id="L25">		this.tiempoDuracionLlamada = tiempoDuracionLlamada;</span>
+<span class="fc" id="L26">		this.fecha = fecha;</span>
+<span class="fc" id="L27">	}</span>
 	
 	
-<span class="nc" id="L30">	public CDR (LineaTelefonica telefonoOrigen, </span>
+<span class="fc" id="L30">	public CDR (LineaTelefonica telefonoOrigen, </span>
 				LineaTelefonica telefonoDestino, 
 				LocalTime horaInicioLlamada, 
 				LocalTime tiempoDuracionLlamada) {
-<span class="nc" id="L34">		this.telefonoOrigen = telefonoOrigen;</span>
-<span class="nc" id="L35">		this.telefonoDestino = telefonoDestino;</span>
-<span class="nc" id="L36">		this.horaInicioLlamada = horaInicioLlamada;</span>
-<span class="nc" id="L37">		this.tiempoDuracionLlamada = tiempoDuracionLlamada;</span>
-<span class="nc" id="L38">		this.fecha = null;</span>
-<span class="nc" id="L39">	}</span>
+<span class="fc" id="L34">		this.telefonoOrigen = telefonoOrigen;</span>
+<span class="fc" id="L35">		this.telefonoDestino = telefonoDestino;</span>
+<span class="fc" id="L36">		this.horaInicioLlamada = horaInicioLlamada;</span>
+<span class="fc" id="L37">		this.tiempoDuracionLlamada = tiempoDuracionLlamada;</span>
+<span class="fc" id="L38">		this.fecha = null;</span>
+<span class="fc" id="L39">	}</span>
 	
 	public LineaTelefonica obtenerTelefonoOrigen() {
 <span class="nc" id="L42">		return this.telefonoOrigen;</span>

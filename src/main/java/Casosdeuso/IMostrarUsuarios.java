@@ -6,4 +6,5 @@ import Entidades.LineaTelefonica;
 
 public interface IMostrarUsuarios {
 	ArrayList<LineaTelefonica> obtenerUsuarios();
+	String obtenerCasoDeUso();
 }
